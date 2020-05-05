@@ -1,0 +1,17 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Win32 - Tag - home/lluisfranco/code/tips/</title>
+        <link>http://lluisfranco.com/tags/win32/</link>
+        <description>Win32 - Tag - home/lluisfranco/code/tips/</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><managingEditor>hello@lluisfranco.com (Lluís Franco)</managingEditor>
+            <webMaster>hello@lluisfranco.com (Lluís Franco)</webMaster><lastBuildDate>Tue, 16 Apr 2019 11:51:50 &#43;0200</lastBuildDate><atom:link href="http://lluisfranco.com/tags/win32/" rel="self" type="application/rss+xml" /><item>
+    <title>Extract extra large icon from a file, folder or drive</title>
+    <link>http://lluisfranco.com/extract-icons-win32/</link>
+    <pubDate>Tue, 16 Apr 2019 11:51:50 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>http://lluisfranco.com/extract-icons-win32/</guid>
+    <description><![CDATA[Extracting system icons from Win32 Overwiew Hi, everyone! :)
+In a recent project I was required to show a list of files with their associated icons. This task sounds quite easy, and in fact it is… Except if you have to deal with files in network paths or you want to get different icons sizes, apart the typical 32×32.
+You can achieve this using managed code (the easy way), using the static method ExtractAssociatedIcon in the class System.]]></description>
+</item></channel>
+</rss>
