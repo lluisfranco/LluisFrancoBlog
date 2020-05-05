@@ -1,6 +1,6 @@
 baseURL = "http://lluisfranco.com/"
 languageCode = "en-us"
-title = "home/lluisfranco/code/tips/"
+title = "lluis franco"
 theme = "loveit"
 categories = ["Development", "How To"]
 Tags = ["a", "b", "c"]
@@ -25,7 +25,7 @@ Tags = ["a", "b", "c"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "home/lluisfranco/code/tips/"
+    title = "lluis franco"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -70,7 +70,7 @@ Tags = ["a", "b", "c"]
       # URL of the LOGO
       logo = ""
       # title name
-      name = "Lluis Franco"
+      name = "lluis franco"
       # you can add extra information before the name (HTML format is supported), such as icons
       pre = "<i class='fab fa-discourse'></i>"
       # you can add extra information after the name (HTML format is supported), such as icons
@@ -439,9 +439,9 @@ Tags = ["a", "b", "c"]
 
 # Author config
 [author]
-  name = "Lluís Franco"
+  name = "lluís"
   email = "hello@lluisfranco.com"
-  link = ""
+  link = "/about/"
 
 # Sitemap config
 [sitemap]
