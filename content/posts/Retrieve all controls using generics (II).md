@@ -2,7 +2,7 @@
 title: "Retrieve all controls using generics (II)"
 subtitle: "LINQ at rescue!"
 date: 2010-11-15T17:20:51+02:00
-featuredImage: /images/posts/code01.jpg
+featuredImage: /images/posts/tshirt2.png
 categories:
 - Development
 - How To
@@ -12,7 +12,7 @@ tags:
 - generics
 - LINQ
 
-draft: true
+# draft: true
 ---
 
 ## Gettings all controls from a container v2

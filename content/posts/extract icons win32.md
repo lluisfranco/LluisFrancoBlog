@@ -1,15 +1,18 @@
 ---
 title: "Extract extra large icon from a file, folder or drive"
-author: "lluis"
+subtitle: "Including network paths! :)"
 date: 2019-04-16T11:51:50+02:00
-draft: false
+featuredImage: /images/posts/extra-large-icons.png
+fontawesome: "true"
 categories: 
 - Development
 - How To
 tags:
 - csharp
+- net framework
 - API
 - Win32
+draft: true
 ---
 
 ## Extracting system icons from Win32
@@ -18,21 +21,17 @@ tags:
 
 Hi, everyone! :)
 
-In a recent project I was required to show a list of files with their associated icons. This task sounds quite easy, and in fact it is… Except if you have to deal with files in network paths or you want to get different icons sizes, apart the typical 32×32.
+In a recent project I was required to show a list of files with their associated icons. It doesn't sounds quite difficult, and in fact it is not. Except if you have to deal with files in network paths or you want to get different icons sizes, apart the typical 32×32. And well, that was the case :(fas fa-grin-beam-sweat):
 
-![some extra large icons](/images/posts/extract_icons_win32.png)
+If you only need local files and sizes of 32x32 píxels you can achieve this using the static method [ExtractAssociatedIcon](http://msdn.microsoft.com/en-us/library/vstudio/system.drawing.icon.extractassociatedicon) in the class System.Drawing.Icon, but sadly this method doesn’t work with UNC (Universal Naming Convention) paths nor return other sizes that 32×32 pixels.
 
-You can achieve this using managed code (the easy way), using the static method [ExtractAssociatedIcon](http://msdn.microsoft.com/en-us/library/vstudio/system.drawing.icon.extractassociatedicon) in the class System.Drawing.Icon, but sadly this method doesn’t work with UNC (Universal Naming Convention) paths nor return other sizes that 32×32 pixels.
+I had to show four different icons sizes including the extra-large icon also called “jumbo”, so I had to some functions and structures from the Win32 API. Of course, if anyone knows a better way to do it, please contact with me ASAP :(fas fa-grin-wink):
 
-I had to show four different icons sizes including the extra-large icon, also called “jumbo”, so I’ve decided to use some functions and structures from the Win32 API. Of course, if anyone knows a better way to do it, please contact with me ASAP :)
+### Show me the (final) code
 
-### Show me the code
+Today I prefer to start from the end so before starting, let’s take a look to the final code:
 
-Before starting, let’s take a look to the final code:
-
-#### The final solution
-
-From a file path and the desired size we'll retrieve the associated icon.
+From a file path and the desired size we wanna retrieve the associated icon.
 
 {{< highlight csharp "linenos=table, hl_lines=3" >}}
 var filename = "\\myNetworkResource\Folder\SampleDocument.pdf";
@@ -40,7 +39,7 @@ var size = IconSizeEnum.ExtraLargeIcon;
 var image = GetBitmapFromFilePath(filename, size);
 {{< / highlight >}}
 
-#### The ingredients
+### The ingredients
 
 API functions and structures (TODO)
 
@@ -70,7 +69,7 @@ SHGetImageList FUNCTION
 private extern static int SHGetImageList(int iImageList, ref Guid riid, ref IImageList ppv);
 {{< / highlight >}}
 
-#### Putting it all together
+### Putting it all together
 
 In this code we’re using several API calls. Here’s the tricky part:
 
@@ -96,13 +95,13 @@ private static IntPtr GetIconHandleFromFilePath(
 }
 {{< / highlight >}}
 
-First, we need to make call to the [SHGetFileInfo](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762179(v=vs.85).aspx) function that receives a reference to a structure of type [SHFILEINFO](http://msdn.microsoft.com/en-us/library/windows/desktop/bb759792(v=vs.85).aspx), which contains the index of the icon image within the system image list. We will use this index later.
+First, we need to call to [SHGetFileInfo](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762179(v=vs.85).aspx) function that receives a reference to a structure of type [SHFILEINFO](http://msdn.microsoft.com/en-us/library/windows/desktop/bb759792(v=vs.85).aspx), which contains the index of the icon image within the system image list. We will use this index later.
 
-Then we’ve to make is a second call to the [SHGetImageList](http://www.pinvoke.net/default.aspx/shell32.shgetimagelist) function that receives an output parameter with an [IImageList](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761490(v=vs.85).aspx) structure, which is modified within the function.
+Then we’ve to perform a second call to the [SHGetImageList](http://www.pinvoke.net/default.aspx/shell32.shgetimagelist) function that receives an output parameter with an [IImageList](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761490(v=vs.85).aspx) structure, which is modified within the function.
 
 This struct retrieve a COM interface and we need to keep in mind a couple of things:
 
-a) We must use the GUID of this interface in the declaration:
+1. We must use the GUID of this interface in the declaration:
 
 {{< highlight csharp "linenos=table" >}}
 [ComImportAttribute()]
@@ -110,11 +109,11 @@ a) We must use the GUID of this interface in the declaration:
 [InterfaceTypeAttribute(ComInterfaceType.InterfaceIsIUnknown)]
 {{< / highlight >}}
 
-b) And in the improbable case you are going to deploy your project over XP, remember that SHGetImageList [is not exported correctly in XP](http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q316931). For this reason you must hardcode the function’s entry point. Apparently (and hopefully) ordinal 727 isn’t going to change…
+2. And in the improbable case you are going to deploy your project over XP, remember that SHGetImageList [is not exported correctly in XP](http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q316931). For this reason you must hardcode the function’s entry point. Apparently (and hopefully) ordinal 727 isn’t going to change...
 
 Once we have that COM interface, we only need to call its [GetIcon](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761463(v=vs.85).aspx) method, passing a parameter with the desired size, and obtaining a handle to the icon by reference.
 
-After having the handle its really simple create an Icon from the handle, and then convert to a Bitmap, BitmapSource or other:
+Once we've the handle we can create an Icon from the handle and then convert to a Bitmap or BitmapSource:
 
 {{< highlight csharp "linenos=table, hl_lines=4" >}}
 public static System.Drawing.Bitmap GetBitmapFromFilePath(
@@ -130,7 +129,7 @@ public static System.Drawing.Bitmap GetBitmapFromFilePath(
 }
 {{< / highlight >}}
 
-> Tip: It’s very important don’t forget to destroy the resources (Icon) when working with the Win32 API!
+> Tip: Don’t forget to destroy the resources (Icon) when working with the Win32 API!
 
 This method calls the previous one, obtains the icon’s handle and then creates the icon using the handle. Then creates a bitmap from the icon, destroys the icon and returns the bitmap.
 

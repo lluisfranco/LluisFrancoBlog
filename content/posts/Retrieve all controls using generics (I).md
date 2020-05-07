@@ -2,7 +2,7 @@
 title: "Retrieve all controls using generics (I)"
 subtitle: "The easy way"
 date: 2010-11-09T17:20:51+02:00
-featuredImage: /images/posts/shirtT.jpg
+featuredImage: /images/posts/tshirt.png
 categories:
 - Development
 - How To
