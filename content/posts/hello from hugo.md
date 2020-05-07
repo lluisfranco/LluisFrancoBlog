@@ -9,9 +9,6 @@ draft: true
 categories: 
 - Development
 - How To
-tags:
-- a
-- b
 ---
 
 ## Aync patterns

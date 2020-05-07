@@ -3,7 +3,15 @@ title: "Retrieve all controls using generics (I)"
 subtitle: "The easy way"
 date: 2010-11-09T17:20:51+02:00
 featuredImage: /images/posts/shirtT.jpg
-draft: true
+categories:
+- Development
+- How To
+tags:
+- csharp
+- net framework
+- generics
+
+# draft: true
 ---
 
 ## Gettings all controls from a container

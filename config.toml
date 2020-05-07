@@ -2,8 +2,9 @@ baseURL = "http://lluisfranco.com/"
 languageCode = "en-us"
 title = "lluis franco"
 theme = "loveit"
+enableEmoji = "true"
 categories = ["Development", "How To"]
-Tags = ["csharp", "b", "c"]
+# Tags = []
 
 [params]
   #  LoveIt theme version
