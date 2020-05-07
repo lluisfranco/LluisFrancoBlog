@@ -1,9 +1,10 @@
 baseURL = "http://lluisfranco.com/"
 languageCode = "en-us"
-title = "lluis franco"
+title = ">_lluis franco"
 theme = "loveit"
+enableEmoji = "true"
 categories = ["Development", "How To"]
-Tags = ["a", "b", "c"]
+# Tags = []
 
 [params]
   #  LoveIt theme version
@@ -25,7 +26,7 @@ Tags = ["a", "b", "c"]
   #  App icon config
   [params.app]
     # optional site title override for the app when added to an iOS home screen or Android launcher
-    title = "lluis franco"
+    title = ">_lluis franco"
     # whether to omit favicon resource links
     noFavicon = false
     # modern SVG favicon to use in place of older style .png and .ico files
@@ -72,7 +73,7 @@ Tags = ["a", "b", "c"]
       # title name
       name = "lluis franco"
       # you can add extra information before the name (HTML format is supported), such as icons
-      pre = "<i class='fab fa-discourse'></i>"
+      pre = "<i class='fas fa-terminal'></i>" #fab fa-discourse fab fa-rocketchat fas fa-robot 
       # you can add extra information after the name (HTML format is supported), such as icons
       post = ""
 
@@ -122,7 +123,7 @@ Tags = ["a", "b", "c"]
       # Gravatar Email for preferred avatar in home page
       gravatarEmail = ""
       # URL of avatar shown in home page
-      avatarURL = "/images/avatar200.png"
+      avatarURL = "/images/myAvatar200.png"
       # subtitle shown in home page
       subtitle = "home/lluisfranco/code/tips/"
       # whether to use typeit animation for subtitle
@@ -201,7 +202,7 @@ Tags = ["a", "b", "c"]
       # whether to show the copy button of the code block
       copy = true
       # the maximum number of lines of displayed code by default
-      maxShownLines = 15
+      maxShownLines = 20
     #  Mapbox GL JS config
     [params.page.mapbox]
       # access token of Mapbox GL JS
@@ -306,7 +307,7 @@ Tags = ["a", "b", "c"]
       [params.page.seo.publisher]
         name = "Lluis Franco"
         [params.page.seo.publisher.logo]
-          url = "/images/avatar200.png"
+          url = "/images/myAvatar200.png"
           width = 127
           height = 40
       # Logo info

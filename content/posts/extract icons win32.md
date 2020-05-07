@@ -1,15 +1,18 @@
 ---
 title: "Extract extra large icon from a file, folder or drive"
-author: "lluis"
+subtitle: "Including network paths! :)"
 date: 2019-04-16T11:51:50+02:00
-draft: false
+featuredImage: /images/posts/extra-large-icons.png
+fontawesome: "true"
 categories: 
 - Development
 - How To
 tags:
-- c#
+- csharp
+- net framework
 - API
 - Win32
+draft: true
 ---
 
 ## Extracting system icons from Win32
@@ -18,125 +21,108 @@ tags:
 
 Hi, everyone! :)
 
-In a recent project I was required to show a list of files with their associated icons. This task sounds quite easy, and in fact it is… Except if you have to deal with files in network paths or you want to get different icons sizes, apart the typical 32×32.
+In a recent project I was required to show a list of files with their associated icons. It doesn't sounds quite difficult, and in fact it is not. Except if you have to deal with files in network paths or you want to get different icons sizes, apart the typical 32×32. And well, that was the case :(fas fa-grin-beam-sweat):
 
-![some extra large icons](/images/posts/extract_icons_win32.png)
+If you only need local files and sizes of 32x32 píxels you can achieve this using the static method [ExtractAssociatedIcon](http://msdn.microsoft.com/en-us/library/vstudio/system.drawing.icon.extractassociatedicon) in the class System.Drawing.Icon, but sadly this method doesn’t work with UNC (Universal Naming Convention) paths nor return other sizes that 32×32 pixels.
 
-You can achieve this using managed code (the easy way), using the static method [ExtractAssociatedIcon](http://msdn.microsoft.com/en-us/library/vstudio/system.drawing.icon.extractassociatedicon) in the class System.Drawing.Icon, but sadly this method doesn’t work with UNC (Universal Naming Convention) paths nor return other sizes that 32×32 pixels.
+I had to show four different icons sizes including the extra-large icon also called “jumbo”, so I had to some functions and structures from the Win32 API. Of course, if anyone knows a better way to do it, please contact with me ASAP :(fas fa-grin-wink):
 
-I had to show four different icons sizes including the extra-large icon, also called “jumbo”, so I’ve decided to use some functions and structures from the Win32 API. Of course, if anyone knows a better way to do it, please contact with me ASAP :)
+### Show me the (final) code
 
-### Show me the code
+Today I prefer to start from the end so before starting, let’s take a look to the final code:
 
-Before starting, let’s take a look to the final code:
-
-#### The final solution
-
-From a file path and the desired size we'll retrieve the associated icon.
+From a file path and the desired size we wanna retrieve the associated icon.
 
 {{< highlight csharp "linenos=table, hl_lines=3" >}}
 var filename = "\\myNetworkResource\Folder\SampleDocument.pdf";
 var size = IconSizeEnum.ExtraLargeIcon;
-var image = GetBitmapFromFilePath(filename, size);
+var image = GetFileImageFromPath(filename, size);
 {{< / highlight >}}
 
-#### The ingredients
+### The ingredients
 
-API functions and structures (TODO)
-
-SHGetFileInfoA FUNCTION
-
-{{< highlight csharp "linenos=table" >}}
-[DllImport("shell32.dll", SetLastError=true)]
-static extern TODO SHGetFileInfoA(TODO);
-{{< / highlight >}}
-
-_SHFILEINFOA STRUCTURE
-
-{{< highlight csharp "linenos=table" >}}
-typedef struct _SHFILEINFOA {
-  HICON hIcon;
-  int   iIcon;
-  DWORD dwAttributes;
-  CHAR  szDisplayName[MAX_PATH];
-  CHAR  szTypeName[80];
-} SHFILEINFOA;
-{{< / highlight >}}
-
-SHGetImageList FUNCTION
-
-{{< highlight csharp "linenos=table" >}}
-[DllImport("shell32.dll", EntryPoint = "#727")]
-private extern static int SHGetImageList(int iImageList, ref Guid riid, ref IImageList ppv);
-{{< / highlight >}}
-
-#### Putting it all together
-
-In this code we’re using several API calls. Here’s the tricky part:
-
-{{< highlight csharp "linenos=table, hl_lines=9 15" >}}
-private static IntPtr GetIconHandleFromFilePath(
-    string filepath, IconSizeEnum iconsize)
-{
-    var shinfo = new Shell.SHFILEINFO();
-    const uint SHGFI_SYSICONINDEX = 0x4000;
-    const int FILE_ATTRIBUTE_NORMAL = 0x80;
-    const int ILD_TRANSPARENT = 1;
-    uint flags = SHGFI_SYSICONINDEX;
-    var retval = SHGetFileInfo(filepath, FILE_ATTRIBUTE_NORMAL,
-        ref shinfo, Marshal.SizeOf(shinfo), flags);
-    if (retval == 0) throw (new System.IO.FileNotFoundException());
-    var iconIndex = shinfo.iIcon;
-    var iImageListGuid = newGuid("46EB5926-582E-4017-9FDF-E8998DAA0950");
-    Shell.IImageList iml;
-    var hres = SHGetImageList((int)iconsize, ref iImageListGuid, out iml);
-    var hIcon = IntPtr.Zero;
-    hres = iml.GetIcon(iconIndex, ILD_TRANSPARENT, ref hIcon);
-    return hIcon;
-}
-{{< / highlight >}}
-
-First, we need to make call to the [SHGetFileInfo](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762179(v=vs.85).aspx) function that receives a reference to a structure of type [SHFILEINFO](http://msdn.microsoft.com/en-us/library/windows/desktop/bb759792(v=vs.85).aspx), which contains the index of the icon image within the system image list. We will use this index later.
-
-Then we’ve to make is a second call to the [SHGetImageList](http://www.pinvoke.net/default.aspx/shell32.shgetimagelist) function that receives an output parameter with an [IImageList](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761490(v=vs.85).aspx) structure, which is modified within the function.
-
-This struct retrieve a COM interface and we need to keep in mind a couple of things:
-
-a) We must use the GUID of this interface in the declaration:
+Here are declared all the functions and types we need to use. You can simply paste all this code into a class.
 
 {{< highlight csharp "linenos=table" >}}
 [ComImportAttribute()]
-[GuidAttribute(“46EB5926-582E-4017-9FDF-E8998DAA0950”)]
+[GuidAttribute("46EB5926-582E-4017-9FDF-E8998DAA0950")]
 [InterfaceTypeAttribute(ComInterfaceType.InterfaceIsIUnknown)]
-{{< / highlight >}}
-
-b) And in the improbable case you are going to deploy your project over XP, remember that SHGetImageList [is not exported correctly in XP](http://support.microsoft.com/default.aspx?scid=kb;EN-US;Q316931). For this reason you must hardcode the function’s entry point. Apparently (and hopefully) ordinal 727 isn’t going to change…
-
-Once we have that COM interface, we only need to call its [GetIcon](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761463(v=vs.85).aspx) method, passing a parameter with the desired size, and obtaining a handle to the icon by reference.
-
-After having the handle its really simple create an Icon from the handle, and then convert to a Bitmap, BitmapSource or other:
-
-{{< highlight csharp "linenos=table, hl_lines=4" >}}
-public static System.Drawing.Bitmap GetBitmapFromFilePath(
- string filepath, IconSizeEnum iconsize)
+private interface IImageList
 {
-    IntPtr hIcon = GetIconHandleFromFilePath(filepath, iconsize);
-    var myIcon = System.Drawing.Icon.FromHandle(hIcon);
-    var bitmap = myIcon.ToBitmap();
-    myIcon.Dispose();
-    DestroyIcon(hIcon);
-    SendMessage(hIcon, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
-    return bitmap;
+    [PreserveSig]
+    int Add(
+        IntPtr hbmImage,
+        IntPtr hbmMask,
+        ref int pi);
+
+    [PreserveSig]
+    int ReplaceIcon(
+        int i,
+        IntPtr hicon,
+        ref int pi);
+
+    [PreserveSig]
+    int SetOverlayImage(
+        int iImage,
+        int iOverlay);
+
+    [PreserveSig]
+    int Replace(
+        int i,
+        IntPtr hbmImage,
+        IntPtr hbmMask);
+
+    [PreserveSig]
+    int AddMasked(
+        IntPtr hbmImage,
+        int crMask,
+        ref int pi);
+
+    [PreserveSig]
+    int Draw(
+        ref IMAGELISTDRAWPARAMS pimldp);
+
+    [PreserveSig]
+    int Remove(
+        int i);
+
+    [PreserveSig]
+    int GetIcon(
+        int i,
+        int flags,
+        ref IntPtr picon);
+};
+private struct IMAGELISTDRAWPARAMS
+{
+    public int cbSize;
+    public IntPtr himl;
+    public int i;
+    public IntPtr hdcDst;
+    public int x;
+    public int y;
+    public int cx;
+    public int cy;
+    public int xBitmap;
+    public int yBitmap;
+    public int rgbBk;
+    public int rgbFg;
+    public int fStyle;
+    public int dwRop;
+    public int fState;
+    public int Frame;
+    public int crEffect;
 }
-{{< / highlight >}}
+private struct SHFILEINFO
+{
+    public IntPtr hIcon;
+    public int iIcon;
+    public uint dwAttributes;
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 254)]
+    public string szDisplayName;
+    [MarshalAs(UnmanagedType.ByValTStr, SizeConst = 260)]
+    public string szTypeName;
+}
 
-> Tip: It’s very important don’t forget to destroy the resources (Icon) when working with the Win32 API!
-
-This method calls the previous one, obtains the icon’s handle and then creates the icon using the handle. Then creates a bitmap from the icon, destroys the icon and returns the bitmap.
-
-I’ve also created an enumeration IconSizeEnum with the different flags values as well:
-
-{{< highlight csharp "linenos=table" >}}
 private const int SHGFI_SMALLICON = 0x1;
 private const int SHGFI_LARGEICON = 0x0;
 private const int SHIL_JUMBO = 0x4;
@@ -150,17 +136,132 @@ public enum IconSizeEnum
     LargeIcon48 = SHIL_EXTRALARGE,
     ExtraLargeIcon = SHIL_JUMBO
 }
+
+[DllImport("user32")]
+private static extern
+    IntPtr SendMessage(
+    IntPtr handle,
+    int Msg,
+    IntPtr wParam,
+    IntPtr lParam);
+
+
+[DllImport("shell32.dll")]
+private static extern int SHGetImageList(
+    int iImageList,
+    ref Guid riid,
+    out IImageList ppv);
+
+[DllImport("Shell32.dll")]
+private static extern int SHGetFileInfo(
+    string pszPath,
+    int dwFileAttributes,
+    ref SHFILEINFO psfi,
+    int cbFileInfo,
+    uint uFlags);
+
+[DllImport("user32")]
+private static extern int DestroyIcon(
+    IntPtr hIcon);
 {{< / highlight >}}
 
-Finally, retrieving the icon from a file path it’s as easy as:
+### Putting it all together
+
+In this code we’re using several API calls to the functions we declared before. You can paste all this code in the same class.
+Here’s the tricky part:
 
 {{< highlight csharp "linenos=table" >}}
-var size = ShellEx.IconSizeEnum.ExtraLargeIcon;
+public static System.Drawing.Bitmap GetFileImageFromPath(
+    string filepath, IconSizeEnum iconsize)
+{
+    IntPtr hIcon = IntPtr.Zero;
+    if (System.IO.Directory.Exists(filepath))
+        hIcon = GetIconHandleFromFolderPath(filepath, iconsize);
+    else
+        if (System.IO.File.Exists(filepath))
+            hIcon = GetIconHandleFromFilePath(filepath, iconsize);
+    return GetBitmapFromIconHandle(hIcon);
+}
+
+private static IntPtr GetIconHandleFromFilePath(string filepath, IconSizeEnum iconsize)
+{
+    var shinfo = new SHFILEINFO();
+    const uint SHGFI_SYSICONINDEX = 0x4000;
+    const int FILE_ATTRIBUTE_NORMAL = 0x80;
+    uint flags = SHGFI_SYSICONINDEX;
+    return GetIconHandleFromFilePathWithFlags(filepath, iconsize, ref shinfo, FILE_ATTRIBUTE_NORMAL, flags);
+}
+
+private static IntPtr GetIconHandleFromFolderPath(string folderpath, IconSizeEnum iconsize)
+{
+    var shinfo = new SHFILEINFO();
+
+    const uint SHGFI_ICON = 0x000000100;
+    const uint SHGFI_USEFILEATTRIBUTES = 0x000000010;
+    const int FILE_ATTRIBUTE_DIRECTORY = 0x00000010;
+    uint flags = SHGFI_ICON | SHGFI_USEFILEATTRIBUTES;
+    return GetIconHandleFromFilePathWithFlags(folderpath, iconsize, ref shinfo, FILE_ATTRIBUTE_DIRECTORY, flags);
+}
+
+private static System.Drawing.Bitmap GetBitmapFromIconHandle(IntPtr hIcon)
+{
+    if (hIcon == IntPtr.Zero) return null;
+    var myIcon = System.Drawing.Icon.FromHandle(hIcon);
+    var bitmap = myIcon.ToBitmap();
+    myIcon.Dispose();
+    DestroyIcon(hIcon);
+    SendMessage(hIcon, WM_CLOSE, IntPtr.Zero, IntPtr.Zero);
+    return bitmap;
+}
+
+private static IntPtr GetIconHandleFromFilePathWithFlags(
+    string filepath, IconSizeEnum iconsize,
+    ref SHFILEINFO shinfo, int fileAttributeFlag, uint flags)
+{
+    const int ILD_TRANSPARENT = 1;
+    var retval = SHGetFileInfo(filepath, fileAttributeFlag, ref shinfo, Marshal.SizeOf(shinfo), flags);
+    if (retval == 0) throw (new System.IO.FileNotFoundException());
+    var iconIndex = shinfo.iIcon;
+    var iImageListGuid = new Guid("46EB5926-582E-4017-9FDF-E8998DAA0950");
+    IImageList iml;
+    var hres = SHGetImageList((int)iconsize, ref iImageListGuid, out iml);
+    var hIcon = IntPtr.Zero;
+    hres = iml.GetIcon(iconIndex, ILD_TRANSPARENT, ref hIcon);
+    return hIcon;
+}
+{{< / highlight >}}
+
+First, we need to call to [SHGetFileInfo](http://msdn.microsoft.com/en-us/library/windows/desktop/bb762179(v=vs.85).aspx) function that receives a reference to a structure of type [SHFILEINFO](http://msdn.microsoft.com/en-us/library/windows/desktop/bb759792(v=vs.85).aspx), which contains the index of the icon image within the system image list. We will use this index later.
+
+Then we’ve to perform a second call to the [SHGetImageList](http://www.pinvoke.net/default.aspx/shell32.shgetimagelist) function that receives an output parameter with an [IImageList](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761490(v=vs.85).aspx) structure, which is modified within the function.
+
+Once we have that COM interface, we only need to call its [GetIcon](http://msdn.microsoft.com/en-us/library/windows/desktop/bb761463(v=vs.85).aspx) method, passing a parameter with the desired size, and obtaining a handle to the icon by reference.
+
+Finally, using the handle we can create an Icon and then convert it to a Bitmap or BitmapSource:
+
+> Tip: Don’t forget to destroy the resources (Icon) when working with the Win32 API!
+
+For better use I’ve also created an enumeration IconSizeEnum (see types declaration) with the different flags values as well:
+
+{{< highlight csharp "linenos=table" >}}
+public enum IconSizeEnum
+{
+    SmallIcon16 = SHGFI_SMALLICON,
+    MediumIcon32 = SHGFI_LARGEICON,
+    LargeIcon48 = SHIL_EXTRALARGE,
+    ExtraLargeIcon = SHIL_JUMBO
+}
+{{< / highlight >}}
+
+Finally, create a new Form and add a PictureBox named 'pictureBox1' a label called 'labelFilePath' and a Button, and into the Button's click event handler use this code:
+
+{{< highlight csharp "linenos=table" >}}
+var size = IconSizeEnum.ExtraLargeIcon;
 var ofd = new OpenFileDialog();
 if (ofd.ShowDialog() == System.Windows.Forms.DialogResult.OK)
 {
     labelFilePath.Text = ofd.FileName;
-    pictureBox1.Image = ShellEx.GetBitmapFromFilePath(ofd.FileName, size);
+    pictureBox1.Image = YourClassNameHere.GetFileImageFromPath(ofd.FileName, size);
 }
 {{< / highlight >}}
 
