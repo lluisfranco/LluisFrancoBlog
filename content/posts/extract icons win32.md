@@ -12,7 +12,7 @@ tags:
 - net framework
 - API
 - Win32
-draft: true
+# draft: true
 ---
 
 ## Extracting system icons from Win32
@@ -144,7 +144,6 @@ private static extern
     int Msg,
     IntPtr wParam,
     IntPtr lParam);
-
 
 [DllImport("shell32.dll")]
 private static extern int SHGetImageList(

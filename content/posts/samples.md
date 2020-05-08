@@ -9,13 +9,12 @@ fontawesome: "true"
 categories: 
 - Development
 - How To
----
-
 draft: true
+---
 
 ## Title 2
 
-### Samples 
+### Samples
 
 [99]/[100]
 
