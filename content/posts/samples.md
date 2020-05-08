@@ -9,7 +9,7 @@ fontawesome: "true"
 categories: 
 - Development
 - How To
-draft: true
+# draft: true
 ---
 
 ## Title 2
