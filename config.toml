@@ -10,7 +10,7 @@ categories = ["Development", "How To"]
   #  LoveIt theme version
   version = "0.2.X"
   # site description
-  description = "home/lluisfranco/code/tips/a"
+  description = "home/lluisfranco/code/tips/"
   # site keywords
   keywords = ["Lluis Franco", "Blog", "Code", "Tips"]
   # site default theme ("light", "dark", "auto")
