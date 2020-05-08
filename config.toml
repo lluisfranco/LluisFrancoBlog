@@ -14,7 +14,7 @@ categories = ["Development", "How To"]
   # site keywords
   keywords = ["Lluis Franco", "Blog", "Code", "Tips"]
   # site default theme ("light", "dark", "auto")
-  defaultTheme = "auto"
+  defaultTheme = "dark"
   # public git repo url only then enableGitInfo is true
   gitRepo = ""
   #  which hash function used for SRI, when empty, no SRI is used
