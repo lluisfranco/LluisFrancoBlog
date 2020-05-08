@@ -9,7 +9,7 @@ fontawesome: "true"
 categories: 
 - Development
 - How To
-draft: true
+# draft: true
 ---
 
 ## Title 2
@@ -27,7 +27,7 @@ Hi, everyone! :)
 ### Shortcodes
 
 Figure / image
-{{< figure src="/images/posts/extract_icons_win32.png" title="Lighthouse (figure)" >}}
+{{< figure src="/images/posts/cover.jpg" title="Mountains (figure)" >}}
 
 Gist
 {{< gist spf13 7896402 >}}
