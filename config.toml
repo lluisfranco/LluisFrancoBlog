@@ -3,7 +3,7 @@ languageCode = "en-us"
 title = ">_lluis franco"
 theme = "loveit"
 enableEmoji = "true"
-categories = ["Development", "How To"]
+categories = ["Development", "How To", "Software"]
 # Tags = []
 
 [params]
