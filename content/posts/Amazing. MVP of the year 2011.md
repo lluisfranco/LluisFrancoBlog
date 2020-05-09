@@ -9,7 +9,6 @@ categories:
 tags:
 - Microsoft
 - MVP
-- 
 # draft: true
 ---
 
