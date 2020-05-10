@@ -22,13 +22,13 @@ Active member and moderator in the good old MS newsgroups and forums for almost 
 
 Founder of AndorraDotNet, the first dotNet user group in the country. 
 
-Host of several events like Geek-a-palooza and others.
+Host of several events like Geek-a-palooza.
 
 Now in a **well deserved retirement** 
 
 ## I like
 
-Coding. Family. Mountains. Sports. Food. Nature. Feminism. Scifi. Fantasy
+Coding. Family. Mountains. Sports. Food. Nature. Feminism. Scifi. Fantasy. Traveling.
 
 ## I dislike
 
@@ -40,5 +40,8 @@ People without imagination or proud of their ignorance. Also most of the politic
 
 {{< instagram BsG0h83FiNm hidecaption >}}
 {{< instagram BlOM4qKja7H hidecaption >}}
-{{< instagram BfGahp5hcRy hidecaption >}}
 {{< instagram BmrIhGLDYi1 hidecaption >}}
+{{< instagram BfGahp5hcRy hidecaption >}}
+{{< instagram B0727jSHQJ8 hidecaption >}}
+{{< instagram B072VWWnHwA hidecaption >}}
+{{< instagram Bugg8xFlEkO hidecaption >}}
