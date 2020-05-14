@@ -15,17 +15,33 @@ tags:
 # draft: true
 ---
 
+## Tables
+
+| Tables   |      Are      |  Cool |
+|----------|:-------------:|------:|
+| col 1 is |  left-aligned | $1600 |
+| col 2 is |    centered   |   $12 |
+| col 3 is | right-aligned |    $1 |
+
+## Gist
+
+{{< gist spf13 7896402 "img.html" >}}
+
 ## Admonition
 
-{{< admonition type=tip title="This is a tip" open=true >}}
+admon samples
+
+{{< admonition type=bug title="This is a bug" >}}
 A **tip** banner
 {{< /admonition >}}
 Or
-{{< admonition tip "This is a tip" false >}}
+{{< admonition tip "This is a tip" >}}
 A **tip** banner
 {{< /admonition >}}
 
 ## Mermaid
+
+mermaid samples
 
 ### Flow
 
@@ -88,6 +104,8 @@ pie
 {{< /mermaid >}}
 
 ## eCharts
+
+echarts samples
 
 Line chart
 
