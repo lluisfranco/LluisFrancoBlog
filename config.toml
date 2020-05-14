@@ -4,7 +4,7 @@ title = ">_lluis franco"
 theme = "loveit"
 enableEmoji = "true"
 categories = ["Development", "How To", "Software"]
-googleAnalytics = "UA-40982094-2"
+GoogleAnalytics = "UA-40982094-2"
 
 [params]
   #  LoveIt theme version
