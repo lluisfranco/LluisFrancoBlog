@@ -68,9 +68,13 @@ private static void SFTP_Connect_And_Download_Sample()
     }
 }
 {{< / highlight >}}
+{{< admonition tip "Note" >}}
+Use the full path to your file in the **privateKeyLocalFilePath** variable.
+{{< /admonition >}}
 
 Take a look at the highlighted line (7). The key here is creating a file that contains the privateKey. I recommend you to use filezilla or similar to test the connection and save it to a file. Your file should looks something like this:
 
+{{< highlight systemd "linenos=table" >}}
 PuTTY-User-Key-File-2: ssh-rsa
 Encryption: aes256-cbc
 Comment: rsa-key-KBL-20171006
@@ -93,8 +97,7 @@ MI5cKWHrDbDC/Cu3YvkF3gekLAb/j9Cie/feHmSnbuZ2VEr6zUt10yaH4hPejCOw
 FYDZb0I8xxxWJZ6BbpLWDqeD0Oiss8UnDhha/iKvodA9LIG0T
 VRlScvGvuzClGYkc7UIWIoARvdxp46YlGMu4mWGeVkNcrxXnmUkdKyNqGjAGJoK/
 Private-MAC: d288fffe72914eb62ed60a7e50fd8ce775
-
-Use the full path to your file in the privateKeyLocalFilePath variable.
+{{< / highlight >}}
 
 ## Bonus * the trick *
 
@@ -106,11 +109,15 @@ Finally I realized this is because the private key must be compatible with SshNe
 
 If you open the new file you will see that the key file now begins with:
 
+{{< highlight systemd "linenos=table" >}}
 —–BEGIN RSA PRIVATE KEY—–
+{{< / highlight >}}
 
 And ends with:
 
+{{< highlight systemd "linenos=table" >}}
 —–END RSA PRIVATE KEY—–
+{{< / highlight >}}
 
 Now this is a valid SSH private key and it shoud work like a charm ;)
 

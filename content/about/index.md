@@ -30,11 +30,11 @@ Now in a **well deserved retirement**
 
 ## I like
 
-Coding. Family. Mountains. Sports. Food. Nature. Feminism. Scifi. Fantasy. Traveling. Atheism.
+Coding. Family. Mountains. Sports. Food. Nature. Feminism. Scifi. Fantasy. Traveling. Science. Atheism.
 
 ## I dislike
 
-People without imagination or proud of their ignorance. Also most of the politicians...
+Anti-vaxxers. Homeopathy. People without imagination or proud of their ignorance. Also politicians...
 
 ## Tech profile
 
