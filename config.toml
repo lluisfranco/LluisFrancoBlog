@@ -6,6 +6,18 @@ enableEmoji = "true"
 categories = ["Development", "How To", "Software"]
 GoogleAnalytics = "UA-40982094-2"
 
+DefaultContentLanguage = "en"
+
+[languages]
+  [languages.en]
+    title = "My blog"
+    languageName = "English"
+    weight = 1
+  [languages.fr]
+    title = "Mi blog"
+    languageName = "Spanish"
+    weight = 2
+
 [params]
   #  LoveIt theme version
   version = "0.2.X"
