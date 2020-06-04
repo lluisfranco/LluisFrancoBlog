@@ -10,11 +10,9 @@ DefaultContentLanguage = "en"
 
 [languages]
   [languages.en]
-    title = "My blog"
     languageName = "English"
     weight = 1
-  [languages.fr]
-    title = "Mi blog"
+  [languages.es]
     languageName = "Spanish"
     weight = 2
 
