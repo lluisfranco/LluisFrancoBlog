@@ -9,7 +9,7 @@ fontawesome: "true"
 categories: 
 - Development
 - How To
-# draft: false
+draft: true
 ---
 
 ## Title 2
@@ -18,7 +18,7 @@ categories:
 
 [99]/[100]
 
-Gone camping! :(fas fa-campground fa-fw): Be back soon...
+Gone camping! :(fas fa-campground fa-fw): Be back soon...ggg
 
 That is so funny! :(far fa-grin-tears):
 
