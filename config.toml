@@ -1,9 +1,9 @@
-baseURL = "http://lluisfranco.com/"
+baseURL = "https://lluisfranco.github.io/"
 languageCode = "en-us"
 title = ">_lluis franco"
 theme = "loveit"
 enableEmoji = "true"
-categories = ["Development", "How To", "Software"]
+# categories = ["Development", "How To", "Software"]
 GoogleAnalytics = "UA-40982094-2"
 
 DefaultContentLanguage = "en"
