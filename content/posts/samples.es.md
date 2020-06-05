@@ -1,5 +1,5 @@
 ---
-title: "OUI Samples post"
+title: "Samples post - spanish"
 subtitle: "saved as draft"
 author: "lluis"
 authorLink: "/about/"
@@ -9,7 +9,7 @@ fontawesome: "true"
 categories: 
 - Development
 - How To
-draft: false
+# draft: false
 ---
 
 ## Title 2
