@@ -1,6 +1,6 @@
 ---
-title: "Parallel Series 01"
-subtitle: "El alfa"
+title: "Parallel Series 01 - El Alfa"
+subtitle: "Empezemos por el principio"
 date: 2011-01-11T11:51:50+02:00
 featuredImage: /images/posts/parallel01.png
 fontawesome: "true"
@@ -16,7 +16,7 @@ tags:
 # draft: true
 ---
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)
 
 ## Prologo
 
@@ -40,6 +40,6 @@ Nos vemos muy pronto ;-)
 
 A continución...
 
-En el [próximo post](/es/parallelseries02/) repasaremos la historia de la programación paralela y veremos cómo hemos llegado aquí.
+En el [próximo post](/es/parallelseries02-un-poco-de-historia/) repasaremos la historia de la programación paralela y veremos cómo hemos llegado aquí.
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)

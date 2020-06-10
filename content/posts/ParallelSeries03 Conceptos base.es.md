@@ -1,6 +1,6 @@
 ---
-title: "Parallel Series 03"
-subtitle: "Conceptos base"
+title: "Parallel Series 03 - Conceptos base"
+subtitle: "Elementos del sistema operativo"
 date: 2011-03-03T11:51:50+02:00
 featuredImage: /images/posts/ProcessesThreds.png
 fontawesome: "true"
@@ -16,7 +16,7 @@ tags:
 # draft: true
 ---
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)
 
 ## Elementos del sistema opertivo
 
@@ -92,6 +92,6 @@ Aquí tienes un vídeo corto (15 minutos) sobre lo que acabamos de contar ;)
 
 A continución...
 
-En el [próximo post](/es/parallelseries04/) veremos cómo extender LINQ con Paralel LINQ, y de este modo dotar a nuestras consultas sobre listas enumerables de paralelismo, sin apenas impacto en el código actual.
+En el [próximo post](/es/parallelseries04-plinq/) veremos cómo extender LINQ con Paralel LINQ, y de este modo dotar a nuestras consultas sobre listas enumerables de paralelismo, sin apenas impacto en el código actual.
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)

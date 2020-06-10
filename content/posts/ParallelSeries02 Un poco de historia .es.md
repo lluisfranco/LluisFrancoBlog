@@ -1,6 +1,6 @@
 ---
-title: "Parallel Series 02"
-subtitle: "Un poco de historia"
+title: "Parallel Series 02 - Un poco de historia"
+subtitle: "O cómo hemos llegado hasta aquí"
 date: 2011-01-21T11:51:50+02:00
 featuredImage: /images/posts/parallelhistory.png
 fontawesome: "true"
@@ -16,7 +16,7 @@ tags:
 # draft: true
 ---
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)
 
 ## Un poco de historia
 
@@ -74,6 +74,6 @@ Algo parecido -salvando las distancias- al cerebro humano, que en comparación c
 
 A continución...
 
-En el [próximo post](/es/parallelseries03/) aclararemos algunos conceptos básicos aunque necesarios cuando desarrollamos aplicaciones que hagan uso de la programación asíncrona.
+En el [próximo post](/es/parallelseries03-conceptos-base/) aclararemos algunos conceptos básicos aunque necesarios cuando desarrollamos aplicaciones que hagan uso de la programación asíncrona.
 
-[Ir al índice de la serie](/es/parallelseriesindex)
+[Ir al índice de la serie](/es/parallelseries00-index)

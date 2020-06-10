@@ -1,5 +1,5 @@
 ---
-title: "Parallel Series - Index"
+title: "Parallel Series - Indice"
 subtitle: "Índice de contenidos"
 date: 2011-01-10T11:51:50+02:00
 featuredImage: /images/posts/parallelindex.png
@@ -18,10 +18,10 @@ tags:
 
 ## Índice de contenidos
 
-- [01 - El Alfa (Prólogo)](/es/parallelseries01)
-- [02 - Un poco de historia](/es/parallelseries02)
-- [03 - Aclarando conceptos base](/es/parallelseries03)
-- 04 - PLINQ: Parallel LINQ
+- [01 - El Alfa (Prólogo)](/es/parallelseries01-el-alfa)
+- [02 - Un poco de historia](/es/parallelseries02-un-poco-de-historia)
+- [03 - Aclarando conceptos base](/es/parallelseries03-conceptos-base)
+- [04 - PLINQ: Parallel LINQ](/es/parallelseries04-plinq)
 - 05 - Parallel static class
 - 06 - Tasks, la 8ª maravilla
 - 07 - Problemas de concurrencia
