@@ -184,6 +184,6 @@ Aquí tienes un vídeo corto (15 minutos) sobre lo que acabamos de contar ;)
 
 A continución...
 
-En el [próximo post](/es/parallelseries05/) veremos cómo utilizar la clase estática Parallel, optimizada para trabajar con procesos iterativos, esos típicos bucles que todas las aplicaciones tienen.
+En el [próximo post](/es/parallelseries05-parallel-static-class) veremos cómo utilizar la clase estática Parallel, optimizada para trabajar con procesos iterativos, esos típicos bucles que todas las aplicaciones tienen.
 
 [Ir al índice de la serie](/es/parallelseries00-index)
