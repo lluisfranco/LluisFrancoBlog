@@ -1,6 +1,6 @@
 ---
 title: "Programación funcional para el resto de nosotros"
-subtitle: "El mejor artículo que leerás hoy :)"
+subtitle: "El mejor artículo que vas a leer hoy (no es mío) xD"
 date: 2012-02-10T11:51:50+02:00
 featuredImage: /images/posts/functionalprogramming.png
 fontawesome: "true"
