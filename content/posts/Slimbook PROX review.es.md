@@ -13,33 +13,31 @@ tags:
 ---
 ## Mi nuevo juguete
 
-No solía trabajar en casa desde antes del año 2000 (ha llovido :p), pero -como a muchos- todo eso cambió a partir del mes de marzo de 2020. Y la verdad, tengo que decir que fué todo un reto volver a tener la disciplina mental apropiada para trabajar en casa de nuevo después de tantos años.
+No solía trabajar en casa desde antes del año 2000 (ha llovido :p), pero -como a muchos- todo eso cambió a partir del mes de marzo de 2020. Y la verdad, tengo que decir que fue todo un reto volver a tener la disciplina mental apropiada para trabajar en casa de nuevo después de tantos años.
 
-Y no me refiero a que técnicamente haya sido un reto ni mucho menos. Joder, en los '90 si que era un reto trabajar en casa con esos módems y esas conexiones a Internet :S además afortunadamente tengo un buen sitio para trabajar en casa, con una buena workstation y un par de monitores chachis, así que no, no va por ahí la cosa...
+Y no me refiero a que técnicamente haya sido un reto ni mucho menos. Joder, en los '90 sí que era un reto trabajar en casa con esos módems y esas conexiones a Internet :S además afortunadamente tengo un buen sitio para trabajar en casa, con una buena workstation y un par de monitores chachis, así que no, no va por ahí la cosa...
 
-Me refiero a que (y esto los que trabajáis en casa lo sabéis) por un lado hace falta tener cierta disciplina mental para levantarse, no gandulear, concentrarse y no pensar en que tienes que ir a la compra o ponerse a hacer cualquier tarea de casa, y sobre todo, lo más importante: no asaltar la nevera cada dos por tres :P 
-
-Y por otro lado, antes trabajaba casi siempre solo (no en equipo) y además no tenía hijos. Y más importante: no tenía hijos en edad escolar encerrados en casa por que no podía ir al cole, con sus deberes y tal y tal... Pero no quiero extenderme, que yo he venido a hablar de mi nuevo juguete.
+Me refiero a que (y esto los que trabajáis en casa lo sabéis) por un lado hace falta tener cierta disciplina mental para levantarse, no gandulear, concentrarse y no pensar en que tienes que ir a la compra o ponerse a hacer cualquier tarea de casa y sobre todo, lo más importante: no asaltar la nevera cada dos por tres :P mientras que por otro lado antes trabajaba casi siempre solo (no en equipo) y además no tenía hijos. Y todavía más, no tenía hijos en edad escolar encerrados en casa por que no podían ir al cole, con sus deberes y tal y tal... Pero no quiero extenderme, que yo he venido a hablar de mi nuevo juguete.
 
 ### Primer aviso: Oops!
 
-La cuestión es que durante este verano, oyendo cómo iba el ventilador de mi workstation me pareció a mi que estaba pilotando un helicóptero y que iba a salir volando en cualquier momento. Aparte de ser algo bastante molesto cuando trabajas, es bastante agotador a la larga y sólo te das cuenta cuando no lo oyes, como si te faltara algo. Pero además tuve un par de sustos del rollo reiniciar el ordenador y que le fallase la junta de la trócola o algo así, qué sé yo. La cuestión es que pensé ¿si me deja tirado ahora qué c*** hago?
+La cuestión es que, durante este verano oyendo cómo iba el ventilador de mi workstation me pareció a mí que estaba pilotando un helicóptero y que iba a salir volando en cualquier momento. Eso, aparte de ser algo bastante molesto a la larga es bastante agotador y sólo te das cuenta cuando no lo oyes, como si te faltase algo. Pero es que además tuve un par de sustos del rollo reiniciar el ordenador y que le fallase la junta de la trócola o algo así, qué sé yo. La cuestión es que pensé ¿si me deja tirado ahora qué cojones hago?
 
-Siempre he sido de sobremesa. O sea, que un portátil está bien, pero si quieres poténcia de fuego y no preocuparte por la autonomía no hay nada como un desktop. Y luego, si te lo puedes permitir está bien tener un portátil para los pocas veces que yo salgo a la carretera.
+Siempre he sido de sobremesa. O sea, que un portátil está bien, pero si quieres potencia de fuego y no preocuparte por la autonomía no hay nada como un desktop. Y luego, si te lo puedes permitir está bien tener un portátil, total son pocas veces las que yo salgo a la carretera.
 
-De hecho todavía conservo un viejo MacBook de 2010 pero aunque lo he ido ampliando con los años (memoria y SSD) y le tengo bastante cariño, dejó de poder actualizarse a las últimas versiones de MacOS o como se llame ahora. De modo que empecé a pensar en buscarle un sustituto por if the flies...
+De hecho, todavía conservo un viejo MacBook de 2010 pero, aunque lo he ido ampliando con los años (memoria y SSD) y le tengo bastante cariño, dejó de poder actualizarse a las últimas versiones de MacOS o como se llame ahora. De modo que empecé a pensar en buscarle un sustituto por if the flies...
 
-### Mi eperiencia previa con otros portátiles
+### Mi experiencia previa con otros portátiles
 
 Una cosa tenía clara: Viendo en los últimos la deriva en los productos de Apple **no quería volver a un MacBook** ya que creo que la calidad de sus laptops ha bajado mucho en los últimos años. He tenido algunos que ya no conservo y he podido comprobarlo de primera mano: Desde teclados de mierda hasta problemas de calentamiento, pasando por su obsesión por la no-conectividad y demases. Por contra los precios no paran de subir hasta un punto en que mi sentido arácnido tiene la sensación de que me están tomando por gilipollas. y claro, eso no mola.
 
-También he tenido portátiles Windows (DELL o Surface) pero la verdad es que no han sido las mejores experiéncias, aunque con los años han mejorado. Pero hay varios temas que me sacan de quicio y que no comentaré ahora para no extender más este post, que me estoy enrollando demasiado.
+También he tenido portátiles Windows (DELL o Surface) pero la verdad es que no han sido las mejores experiencias sobre todo con las actualizaciones, aunque eso sí, con los años han mejorado. Pero hay varios temas que todavía me sacan de quicio y que no comentaré ahora para no extender más este post, que ya me estoy enrollando demasiado.
 
-Así que empecé a buscar portátiles Linux y todavía no se muy bien cómo llegué a la página de [SLIMBOOK](slimbook.es) y me encontré con unos portátiles muy chulos, con especificaciones de infarto, muy ligeros y que además de venir con la distro de Linux que tu quieras tienen una cosa que valoro mucho viniendo de Apple: Los componentes no van soldados. Puedes ampliar o cambiar la memória tu mismo cuando quieras. Ahí ya me ganaron :D
+Así que empecé a buscar portátiles Linux y todavía no sé muy bien cómo llegué a la página de [SLIMBOOK](slimbook.es) y me encontré con unos portátiles muy chulos, con especificaciones de infarto, muy ligeros y que además de venir con la distro de Linux que tú quieras tienen una cosa que valoro mucho viniendo de Apple: Los componentes no van soldados. Puedes ampliar o cambiar la memoria tú mismo cuando quieras. Ahí ya me ganaron :D
 
 Empecé a leer algunas reviews y tenían buena pinta, aunque comprar un portátil de una marca pequeña y no muy conocida siempre tiene un riesgo y acojona un poco. Pero como es verano pensé "mira, tírate a la piscina y luego ya tal. Y dicho y hecho.
 
-Antes los estuve mareando un poco con preguntas sobre especificaciones, componentes, compatibilidad con Linux mint (la distro que uso ahora) y temas de aduanas porque vivo en Andorra y hay una frontera e impuestos por el medio. Pero como vi que respondían bien y rápido pues pensé... p'alante.
+Antes los estuve mareando un poco con preguntas sobre especificaciones, componentes, compatibilidad con Linux Mint (la distro que uso ahora) y temas de aduanas porque vivo en Andorra y hay una frontera e impuestos por el medio. Pero como vi que respondían bien y rápido pues pensé... p'alante.
 
 ## La odisea 
 
@@ -49,9 +47,9 @@ Una vez realizado el pedido (pedí también un dock compatible con dos salidas 4
 
 Una vez enviado, el portátil se fue de gira por casi todas las ciudades de España gracias a los inefables amigos de Correos Express (pésimo servicio, de verdad) y en cada parada decían que les faltaban ciertos documentos de aduanas que la gente de SLIMBOOK ya les había mandado más de una vez. Total, que el tema terminó con el portátil volviendo a las manos de SLIMBOOK y yo desesperado maldiciendo a la gente de correos :/
 
-Finalmente terminó llegando a mis manos pero esa es otra historia.
+Finalmente terminó llegando a mis manos, pero esa es otra historia.
 
-## La bella y la béstia
+## La bella y la bestia
 
 Ahora que lo tengo os puedo decir que es una verdadera preciosidad con unas especificaciones de aúpa:
 
@@ -83,19 +81,19 @@ Tal y como pedí ya viene con Linux Mint 20 Ulyana de fábrica y con todos los d
 
 {{< figure src="/images/posts/battery_search.png" title="Slimbook Battery" >}}
 
-[Slimbook Battery](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/398-slimbook-battery-3-application-for-optimize-battery-of-your-laptop): Para gestionar la batería de forma muy eficiente. De momento lo he probado poco, a ver si se nota cuando me esté quedando tieso algún dia...
+[Slimbook Battery](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/398-slimbook-battery-3-application-for-optimize-battery-of-your-laptop): Para gestionar la batería de forma muy eficiente. De momento lo he probado poco, a ver si se nota cuando me esté quedando tieso algún día...
  
 {{< figure src="/images/posts/app_face.png" title="Slimbook Face" >}}
 
-[Slimbook Face](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/400-slimbook-face-biometric-recognition-and-dont-enter-more-passwords): Reconocimiento facial para no pasarte la vida autenticando cada vez que inicias sesión, haces un sudo o instalas updates. Ojo aquí porque al principio le costaba reconocer mi cara pero volví a crear el modelo con más luz y ya está. 
+[Slimbook Face](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/400-slimbook-face-biometric-recognition-and-dont-enter-more-passwords): Reconocimiento facial para no pasarte la vida autenticando cada vez que inicias sesión, haces un sudo o instalas updates. Ojo aquí porque al principio le costaba reconocer mi cara, pero volví a crear el modelo con más luz y ya está. De hecho creé dos o tres porsiaca aunque no sé si sirve para algo xD
 
-Además también viene instalado [Ulauncher](https://ulauncher.io/) que es una utilidad al estilo Spotlight de MacOs que no conocía y va muy bien. En lugar de COMMAND+SPACE aquí es CTRL+SPACE pero de momento funciona de lujo.
+Además, también viene instalado [Ulauncher](https://ulauncher.io/) que es una utilidad al estilo Spotlight de MacOs que no conocía y va muy bien. En lugar de COMMAND+SPACE aquí es CTRL+SPACE pero de momento funciona de lujo.
 
 {{< figure src="/images/posts/Ulauncher.gif" title="Ulauncher" >}}
 
 ### Un pequeño inconveniente
 
-En realidad no es un inconveniente porque funciona con UBUNTU pero todavía no con Mint.
+En realidad no es un inconveniente porque funciona con UBUNTU pero todavía no con MINT.
 
 Hay [otra aplicación de SLIMBOOK](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/431-slimbook-gestures-configure-your-touchpad-gestures-easily-in-ubuntu) para controlar los gestures del touchpad que en mi caso no estaba instalada porque todavía no es compatible al 100% con Mint (me han comentado que están en ello).
 
@@ -112,7 +110,7 @@ Ya veréis que no tiene ningún secreto y funciona perfectamente.
 
 ## Funcionamiento 
 
-Llevo sólo un par de días así que no tengo mucho que contar salvo que de momento 0 sorpresas. Todo va como la seda y de hecho siento que es mucho más potente que mi workstation haciendo las mismas cosas. Lo pongo por comparar porque en éste tembién tengo Mint instalado.
+Llevo sólo un par de días así que no tengo mucho que contar salvo que de momento 0 sorpresas. Todo va como la seda y de hecho siento que es mucho más potente que mi workstation haciendo las mismas cosas. Lo pongo por comparar porque en éste también tengo MINT instalado.
 
 Sólo he podido mirar la autonomía durante el día de ayer y se fue sobre las 6 horas de uso moderado. Nada de 8 máquinas virtuales, 24 contenedores y compilando a lo loco... lo cual no está mal pero tampoco una maravilla. Lo esperado.
 
@@ -120,11 +118,11 @@ Sólo he podido mirar la autonomía durante el día de ayer y se fue sobre las 6
 
 ## En resumen
 
-Los comerciales muy atentos (gracias Sandra y Raúl).
+Los comerciales muy atentos ¡Gracias Sandra y Raúl!.
 
 Los de soporte de momento siempre han resuelto todas mis dudas.
 
-El portátil una béstia.
+El portátil una bestia.
 
 De momento muy contento,
 
@@ -132,9 +130,11 @@ And that’s all!
 
 Espero poder seguir actualizando este post a medida que lo vaya teniendo más por la mano ;)
 
+En un par de días supongo que llegará el nuevo dock de SLIMBOOK. Éste nuevo dock además de las salidas 4K ya incorpora carga por el puerto USB para no tener el cargador conectado (un cable menos) y un monitor de 34" ultrawide, así que ya os contaré que tal.
+
 {{< admonition type=bug title="EDIT (20/08/2020)" >}}
 No me lo puedo creer: **Mi workstation ha muerto** :/
-Menos mal que tengo el portátil que si no me da algo. Joder que mala (o buena) suerte :S
+Menos mal que tengo el portátil que si no me da algo. Joder que mala (o buena) suerte :S jodeeeeerrrr...
 {{< /admonition >}}
 
 {{< tweet 1295766624771936258 >}}
