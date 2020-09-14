@@ -120,7 +120,7 @@ Sólo he podido mirar la autonomía durante el día de ayer y se fue sobre las 6
 
 Los comerciales muy atentos ¡Gracias Sandra y Raúl!.
 
-Los de soporte de momento siempre han resuelto todas mis dudas.
+Los de soporte de momento siempre han resuelto todas mis dudas (thx Pepe).
 
 El portátil una bestia.
 
@@ -130,7 +130,7 @@ And that’s all!
 
 Espero poder seguir actualizando este post a medida que lo vaya teniendo más por la mano ;)
 
-En un par de días supongo que llegará el nuevo dock de SLIMBOOK. Éste nuevo dock además de las salidas 4K ya incorpora carga por el puerto USB para no tener el cargador conectado (un cable menos) y un monitor de 34" ultrawide, así que ya os contaré que tal.
+En un par de días supongo que llegará el nuevo dock de SLIMBOOK. Este nuevo dock además de las salidas 4K ya incorpora carga por el puerto USB para no tener el cargador conectado (un cable menos) y un monitor de 34" ultrawide, así que ya os contaré que tal.
 
 {{< admonition type=bug title="EDIT (20/08/2020)" >}}
 No me lo puedo creer: **Mi workstation ha muerto** :/
