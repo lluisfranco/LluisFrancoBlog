@@ -172,7 +172,7 @@ El dock que yo tengo es el nuevo de SLIMBOOK pero parece que en su web que todav
 
 El único inconveniente es que ocasionalmente he experimentado algún reinicio del dock. Nada grave pero es un poco molesto porque todas las aplicaciones pasan del monitor principal a la pantalla del portátil y hay que volver a recolocarlo todo. De todos modos la buena gente de SLIMBOOK se ha ofrecido a mandarme otro cargador del dock por si es eso, así que ya os iré contando cuando tenga el nuevo. Lo dicho, el servicio técnico sigue siendo de 10.
 
-Lo sigo recomendando encarecidamente si buscas un buen portátil con Linux :)
+Lo sigo recomendando encarecidamente si buscas un portátil de alta gama con Linux :)
 
 L
 
