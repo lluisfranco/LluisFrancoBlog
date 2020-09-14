@@ -152,7 +152,7 @@ En el montaje final he remplazado mis dos monitores viejos de 24" por uno de 34"
 De hecho ahora me doy cuenta de lo poco que usaba mi segundo monitor. Me refiero a que si, lo usaba, pero mi atención estaba casi centrada en el principal y mi vista se desplazaba mucho menos al segundo. De hecho, antes pensaba en añadir un segundo monitor (uno de mis antiguos de 24") vertical para leer código pero me parece que al final no lo voy a hacer. De momento me sobra con lo que tengo, tal vez más adelante.
 
 El el dock tengo conectado un monitor de 34", un teclado mecánico cherry red, un mouse logitech, el cable ethernet y lógicamente un cable USB-C al portátil. Porque una de las ventajas de este nuevo dock de SLIMBOOK es que con un sólo cable del portátil al dock saca video y carga al mismo tiempo. 
-Sólo es necesario instalar en el portátil el driver DisplayLink para Ubuntu y derivados que puedes descargar desde [aquí](https://www.displaylink.com/downloads).
+Sólo es necesario instalar en el portátil el [driver DisplayLink para Ubuntu y derivados](https://www.displaylink.com/downloads).
 
 {{< figure src="/images/posts/Dock.jpg" title="Dock station" >}}
 
