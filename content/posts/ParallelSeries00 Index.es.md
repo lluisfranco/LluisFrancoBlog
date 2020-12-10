@@ -23,7 +23,7 @@ tags:
 - [03 - Aclarando conceptos base](/es/parallelseries03-conceptos-base)
 - [04 - PLINQ: Parallel LINQ](/es/parallelseries04-plinq)
 - [05 - Parallel static class](/es/parallelseries05-parallel-static-class)
-- 06 - Tasks, la 8ª maravilla
+- [06 - Tasks, la 8ª maravilla](/es/parallelseries06-task-class)
 - 07 - Problemas de concurrencia
 - 08 - Materiales y presentaciones de mis eventos
 

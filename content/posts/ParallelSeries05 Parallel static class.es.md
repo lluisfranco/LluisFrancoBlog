@@ -168,6 +168,6 @@ En el caso anterior especificamos un grado de paralelización de la mitad del n�
 
 A continución...
 
-En el [próximo post](/es/parallelseries06/) veremos cómo utilizar la clase estática Parallel, optimizada para trabajar con procesos iterativos, esos típicos bucles que todas las aplicaciones tienen.
+En el [próximo post](/es/parallelseries06-task-class) veremos cómo utilizar la clase Task para crear, ejecutar, encadenar y gestionar tareas de forma asíncrona.
 
 [Ir al índice de la serie](/es/parallelseries00-index)
