@@ -18,7 +18,7 @@ In love with C#, Java, SQL, software architecture, async patterns & more.
 
 Ex-teacher, Blogger, Speaker, Geek & family guy, living in Andorra since 2001.
 
-Microsoft MVP 2002-2016, MAP, MCC
+Former Microsoft MVP 2002-2016, MAP, MCC
 
 Active member and moderator in the good old MS newsgroups and forums for almost two decades.
 
@@ -54,7 +54,7 @@ Languages and technologies I've learnt through the years.
 | Delphi              |  1998 | 2002 |     :star::star::star::star: |
 | Java                |  1998 | 2004 |     :star::star::star::star: |
 | ActionScript        |  1999 | 1999 |     :star: |
-| Visual Basic.NET    |  2002 | 2010 |     :star::star::star::star::star: |
+| Visual Basic.NET    |  2002 | 2010 |     :star::star::star::star: |
 | C#                  |  2002 |    - |     :star::star::star::star::star: |
 | Javascript          |  2008 |    - |     :star::star::star: |
 | F#                  |  2012 | 2012 |     :star::star: |
