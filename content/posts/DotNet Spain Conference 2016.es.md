@@ -53,12 +53,19 @@ En la parte final tuvimos tiempo para una sorpresa en forma de ejemplo REAL de c
 
 https://github.com/lluisfranco/AsyncDatabaseCancellationDemo
 
-Y para terminar y como al fin y al cabo este es mi blog, me voy a dar un poco de autobombo, que coño! ;)
+### Post - Acerca de los materiales
 
-Aquí van algunos tuits, gracias a todos por el buen feedback!
+En [este post](es/materiales-sesion-dotnet-spain-2016/) publiqué los materiales utilizados en mi sesión.
+
+### Post - Video de la charla
+
+En [este post](es/video-sesion-dotnet-spain-2016/) está el video sobre la charla para los que no pudieron asistir.
 
 ### Reactions - Gracias pipol! :D
 
+Y para terminar y como al fin y al cabo este es mi blo... un poco de autobombo, que coño! ;)
+
+Aquí van algunos tuits, gracias a todos por el buen feedback!
 {{< tweet 702506602130182144 >}}
 
 {{< tweet 702506851087286272 >}}
