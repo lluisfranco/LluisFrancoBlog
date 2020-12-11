@@ -174,7 +174,46 @@ El único inconveniente es que ocasionalmente he experimentado algún reinicio d
 
 Lo sigo recomendando encarecidamente si buscas un portátil de alta gama con Linux :)
 
-L
+## Update (11/12/2020)
 
+Bueno, ahora que ya llevo unos meses trabajando os cuento:
 
+El portátil se sigue comportando estupendamente. Sólo he experimentado algún cuelgue ocasional debido al driver de NVIDIA pero se solucionó instalando el oficial (cosa que debería haber hecho desde un principio :P). Un campeón y yo muy comtento.
 
+Lo único es pienso a veces es que por lo poco que lo uso para ir arriba y abajo casi que podía haberme pillado el de 15" en lugar del de 14" xD
+
+Ah si... y no se que he tocado pero ahora el bluetooth cuando inicio el portátil está inhabilitado y tengo que activarlo a mano. Tendré que mirar a ver.
+
+### El dock
+
+Un par de veces (en tres meses) parece que al hibernar el dock se ha quedado frito y he tenido que apagarlo y volverlo a encender (con el botón) para que vuelva a funcionar. Además, cuando reinicio el portátil a veces funciona todo bien (salidas de vídeo, usbs, etc.) pero hay veces no hay salida de corriente y el portátil no carga. Y si no te fijas en el indicador de batería de Linux Mint se puede quedar tirando de batería hasta que te des cuenta. Muy raro.
+
+De todos modos también se soluciona apagando y encendiento de nuevo el dock, con lo que no deja de ser una moléstia.
+
+### Ampliando horizontes
+
+Hace cosa de un mes decidí que para tener un monitor de 24" en el armario muerto de asco, lo podía aprovechar y ponerlo en verticar a la derecha del principal. Porque aunque tenga suficiente con el nuevo de 34" en el 90% de los casos, es una lástima tenerlo escondido. Así que me decidí a cambiar otra vez la configuración.
+
+Pasé el portátil a la izquierda, justo delante de los discos Synology, en un soporte, porque así queda con la inclinación adecuada. Es cierto que lo toco más bien poco, pero mira, me va muy bien para tener ahí Spotify, Teams y similares. Cosas a las que prestas poca atención :D
+
+Me compré un buen soporte con dos brazos, porque el monitor de 34 pesa casi 7 Kg. y algo para esconder los cables. Aquí antes hay que comprobar si tus monitores son compatibles VESA 75 o 100 para no tener disgustos.
+
+En cuanto llegó el soporte me pude manos a la obra y en poco más de una hora lo tenía montado. La mayoría de los soportes buenos tienen al menos dos opciones de montaje, una de pinza y otra que requiere hacer un pequeño agujero de un centímetro y medio. yo me decidí por la segunda porque aguanta más y mis monitores no son precisamente pesos ligeros.
+
+{{< figure src="/images/posts/SoporteMonitor2.jpg" title="Montaje del soporte" >}}
+
+Una vez montado el soporte principal del soporte hay que montar los dos brazos y atornillar los monitores a éstos (los míos son VESA 100). Por último viene la tarea más tedios y que me costó más que es esconder los cables de los monitores y pasarlos por dentro de los brazos para que quede de lo más cuqui :)
+
+{{< figure src="/images/posts/SlimbookNewConfig.jpg" title="La nueva configuración mola" >}}
+
+La pantalla de la derecha es sólo de 24" pero al colocarla vertical parece mucho más grande. La verdad es que la estoy usando más de lo que pensaba, sobre todo para el correo, leer documentos e incluso para programar.
+
+En conjunto mola mucho. Lo del soporte tenía que haberlo hecho antes porque ahora tengo los monitores a la altura corecta y se pueden mover sin problemas y con suavidad. Es una gozada. Y además me queda todo el espacio de abajo para poder los típicos cacharros de escritorio para los bolis, lápices y demás cosas.
+
+### Info sobre los componentes
+
+[El soporte](https://www.amazon.es/gp/product/B0861284GB/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
+
+[Para los cables](https://www.amazon.es/gp/product/B086KWLDDZ/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
+
+(seguiremos informando) :smile:
