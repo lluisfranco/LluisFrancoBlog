@@ -8,11 +8,11 @@ categories:
 - Development
 - Event
 tags:
-- csharp
-- net framework
-- Task
-- Parallel
-- Async
+- dotnet
+- ios
+- robotics
+- web
+- security
 # draft: true
 ---
 
