@@ -1,7 +1,7 @@
 ---
 title: "Despedida del programa Microsoft MVP"
 subtitle: "Everything ends :)"
-date: 2016-07-04T11:51:50+02:00
+date: 2016-09-27T11:51:50+02:00
 featuredImage: /images/posts/MVPfinal.png #better 1000x500
 fontawesome: "true"
 categories: 
@@ -38,7 +38,7 @@ A decir verdad desde hace un par de años ya le había comentado a [mamá Cristi
 
 A lo largo de los años hemos podido encontrarnos en eventos de todo tipo (MVP Open Days, Summits,  Techdays y muchos otros) y hemos compartido momentos fantásticos y maravillosas expeciéncias y oportunidades, como poder ir a Redmond, Seattle durante los MVP Summit y poder conocer a la gente de los equipos de desarrollo de Microsoft, pasear por el campus y desfrutar de unas buenas juergas ;)
 
-Ah! Y un totalmente inesperado premio como MVP of the year en 2011, sea lo que sea eso, pero suena bien :D
+Ah! Y un totalmente inesperado premio como [MVP of the year en 2011](/awarded-mvp-of-the-year/) sea lo que sea eso, pero suena bien :D
 
 {{< figure src="/images/posts/mvp03.jpg" title="Los famosos bautizos de los nuevos MVPs" >}}
 
