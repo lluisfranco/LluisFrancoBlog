@@ -1,12 +1,13 @@
-baseURL = "https://lluisfranco.github.io/"
+baseURL = "https://lluisfranco.com/"
 languageCode = "en-us"
 title = ">_lluis franco"
 theme = "loveit"
 enableEmoji = "true"
-# categories = ["Development", "How To", "Software"]
 GoogleAnalytics = "UA-40982094-2"
+disqusShortname = "lluisfrancoblog"
 
 DefaultContentLanguage = "en"
+
 ignoreErrors = ["error-remote-getjson"]
 
 [languages]
