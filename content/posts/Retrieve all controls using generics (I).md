@@ -52,7 +52,7 @@ This method retrieves the collection of Controls from a container calling it its
 this.GetControls<TextBox>().ForEach(p => p.Text = string.Empty);
 {{< / highlight >}}
 
-We can  use the extensor method directly into a form because Form class inherits from ContainerControl, that inherits from ScrollableControl, and ScrollableControl from Control. Or, in other words, our Form will implement our extensor method. 
+We can  use the extensor method directly into a form because Form class inherits from ContainerControl, that inherits from ScrollableControl, and ScrollableControl from Control. Or, in other words, our Form will implement our extensor method.
 
 So, at compile time we should specify the type of the controls we want to retrieve. In the example we are using TextBox, but you can use Button type instead. And then, use ForEach to apply an action on each one of the items returned.
 
@@ -81,12 +81,12 @@ private void ApplyFormat(TextBox text)
 Or maybe, using an ‘action delegate’, both options are correct:
 
 {{< highlight csharp "linenos=table" >}}
-this.GetControls<TextBox>().ForEach(p => 
-{ 
-    p.BackColor = Color.LightGray; 
-    p.ForeColor = Color.Red; 
-    p.Text = "hello"; 
-    p.TextAlign = HorizontalAlignment.Center; 
+this.GetControls<TextBox>().ForEach(p =>
+{
+    p.BackColor = Color.LightGray;
+    p.ForeColor = Color.Red;
+    p.Text = "hello";
+    p.TextAlign = HorizontalAlignment.Center;
 });
 {{< / highlight >}}
 

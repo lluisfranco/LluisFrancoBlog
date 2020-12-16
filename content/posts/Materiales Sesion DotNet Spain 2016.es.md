@@ -32,7 +32,7 @@ Pues no, desde hace tiempo he sustituido el cmd por la estupenda ConEmu, que per
 
 {{< figure src="/images/posts/ConEmu.png" title="ConEmu" >}}
 
-Podéis descargarla desde: https://conemu.github.io/
+Podéis descargarla desde: <https://conemu.github.io/>
 
 {{< admonition tip "Nota (Ago. 2020)" >}}
 En lugar de ConEmu, como ha llovido algo desde el post original, os recomiendo también el estupendo y renovado [Windows Terminal](https://www.microsoft.com/en-us/p/windows-terminal/9n0dx20hk701?activetab=pivot:overviewtab) :D
@@ -44,7 +44,7 @@ En lugar de ConEmu, como ha llovido algo desde el post original, os recomiendo t
 
 Por supuesto. Esta plantilla básicamente muestra los eventos Starting y Completed de cada vez que se ejecuta un SQL statement (en este caso un Stored Procedure que tarda unos 5 segundos en completarse). Lo más interesante es que gracias a esta plantilla podemos ver si las peticiones terminan con éxito o han sido canceladas por el usuario, amén de la duración, que también nos puede indicar si ha terminado con éxito o no.
 
-SQL Profiler template: http://1drv.ms/1p43ti6
+SQL Profiler template: <http://1drv.ms/1p43ti6>
 
 {{< figure src="/images/posts/SqlProfier1.png" title="SQL Profiler template" >}}
 

@@ -84,7 +84,7 @@ Evidentemente esta afirmación es un poco exagerada, ya que siempre va a haber u
 
 Como hemos visto, por el momento sólo puede existir paralelismo real en una estación con varios cores. De otro modo el código funcionará sin errores pero solo utilizando el único core de la máquina. Así que un error bastante común entre los desarrolladores es utilizar máquinas virtuales para desarrollar, y olvidarnos que la mayoría no permiten especificar varios cores. De modo que es bastante probable que alguna vez nos encontremos refunfuñando porque un código bien escrito no obtiene ninguna ganancia cuando lo ejecutemos dentro de una maquina virtual :angry:
 
-## Video 
+## Video
 
 Aquí tienes un vídeo corto (15 minutos) sobre lo que acabamos de contar ;)
 

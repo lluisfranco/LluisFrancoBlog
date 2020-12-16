@@ -50,17 +50,17 @@ El principal motivo es que ya no creo que por méritos propios merezca estar ent
 
 Ya no tengo ni el mismo tiempo ni -porque no decirlo- las mismas ganas que hace unos años... y sinceramente, hay gente que contribuye de ese modo mucho más y mejor que yo. Así que decidí que donde puedo aportar más, es por ejemplo en los eventos grandes tipo DotNetConference o organizando el GAPAND anual, que de momento seguirá.
 
-Claro que no es el único motivo. 
+Claro que no es el único motivo.
 
 Hay cosas en las que no estoy 100% de acuerdo con el programa y a medida que me voy haciendo mayor llevo peor estas cosas... lo sé, parezco un viejo cascarrabias :D
 
-Pero ahora no es el momento ni el lugar para hablar de ello. En este post sólo quiero, como he dicho al principio, dar las gracias a todos y decir que me lo he pasado pipa durante este tiempo. 
+Pero ahora no es el momento ni el lugar para hablar de ello. En este post sólo quiero, como he dicho al principio, dar las gracias a todos y decir que me lo he pasado pipa durante este tiempo.
 
 {{< figure src="/images/posts/mvp04.jpg" title="Mi prima La Evas, MVP en collejas" >}}
 
 Siempre recordaré este periodo con muchísimo cariño!
 
-### Nos vemos!
+### Nos vemos ;)
 
 Yo por mi parte bajaré el próximo día 5/6 de Octubre al Tech Summit en Madrid y aprovecharé para despedirme de todos los que me encuentre, ya que aprovecharé la excusa y me pillaré un tiempo sabático de todo esto, que ya me toca :P
 
@@ -68,4 +68,4 @@ Gracias a todos y ahora que sigan otros tirando del carro :D #NewBlood
 
 L
 
-> Había pensado en esperar al 1 de Octubre para escribir esto, pero al final he decidido hacerlo ahora para no coincidir con la alegría de todos los nuevos (o renovados) MVP. 
+> Había pensado en esperar al 1 de Octubre para escribir esto, pero al final he decidido hacerlo ahora para no coincidir con la alegría de todos los nuevos (o renovados) MVP.

@@ -99,7 +99,7 @@ VRlScvGvuzClGYkc7UIWIoARvdxp46YlGMu4mWGeVkNcrxXnmUkdKyNqGjAGJoK/
 Private-MAC: d288fffe72914eb62ed60a7e50fd8ce775
 {{< / highlight >}}
 
-## Bonus * the trick *
+## Bonus (trick)
 
 I’ve spent a lot of time before it works receiving a SSH exception “Invalid private key file”, but the same key file works fine when using the app Filezilla to connect, so #WhatTheHell is going on :grimacing:
 

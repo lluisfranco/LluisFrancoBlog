@@ -19,7 +19,7 @@ Y no me refiero a que técnicamente haya sido un reto ni mucho menos. Joder, en 
 
 Me refiero a que (y esto los que trabajáis en casa lo sabéis) por un lado hace falta tener cierta disciplina mental para levantarse, no gandulear, concentrarse y no pensar en que tienes que ir a la compra o ponerse a hacer cualquier tarea de casa y sobre todo, lo más importante: no asaltar la nevera cada dos por tres :P mientras que por otro lado antes trabajaba casi siempre solo (no en equipo) y además no tenía hijos. Y todavía más, no tenía hijos en edad escolar encerrados en casa por que no podían ir al cole, con sus deberes y tal y tal... Pero no quiero extenderme, que yo he venido a hablar de mi nuevo juguete.
 
-### Primer susto: Oops!
+### Primer susto: Oops :S
 
 La cuestión es que durante este verano al escuchar cómo iba el ventilador de mi workstation me pareció a mí que estaba pilotando un helicóptero y que iba a salir volando en cualquier momento. Y eso es algo que aparte de ser algo bastante molesto a la larga es bastante agotador y sólo te das cuenta cuando no lo oyes, como si te faltase algo. Además tuve un par de sustos del rollo reiniciar el ordenador y que le fallase la junta de la trócola o algo así, qué sé yo... se quedaba en la BIOS y no respondía ni al teclado ni a nada. La cuestión es que al final pensé ¿si me deja tirado ahora qué cojones hago?
 
@@ -39,7 +39,7 @@ Empecé a leer algunas reviews y tenían buena pinta, aunque comprar un portáti
 
 Antes los estuve mareando un poco con preguntas sobre especificaciones, componentes, compatibilidad con Linux Mint (la distro que uso ahora) y temas de aduanas porque vivo en Andorra y hay una frontera e impuestos por el medio. Pero como vi que respondían bien y rápido pues pensé... enga, p'alante.
 
-## La odisea 
+## La odisea
 
 > No os quiero aburrir con esto así que os lo cuento rápido. Si alguien tiene preguntas que me mande un privado por Twitter.
 
@@ -60,7 +60,7 @@ Ahora que lo tengo os puedo decir que es una verdadera preciosidad con unas espe
 - La pantalla es de 14 pulgadas FullHD con panel LED IPS
 - Y el teclado (aunque siempre es subjetivo y es más cuestión de gustos) es el mejor que he tenido en un portátil. Y yo soy muy tocapelotas con esto, que siempre uso teclados mecánicos.
 
-Por ponerle un pero, la retroiluminación es demasiado clara para mi gusto y a veces se confunde con la tecla. Pero lo compensa el tacto. 
+Por ponerle un pero, la retroiluminación es demasiado clara para mi gusto y a veces se confunde con la tecla. Pero lo compensa el tacto.
 
 Y todo ello en 1,1Kg de peso. La gente cuando lo ve alucina :D
 
@@ -70,7 +70,7 @@ La caja no es excesivamente grande y contiene el portátil y el cargador, que yo
 
 {{< tweet 1295422551250948096 >}}
 
-También trae una funda muy cuca para que no se ensucie o ralle el teclado. 
+También trae una funda muy cuca para que no se ensucie o ralle el teclado.
 A ver si me acostumbro a llevarla siempre :)
 
 {{< figure src="/images/posts/SlimbookFundaTeclado.jpg" title="Esa funda guapa que me ha durado 2 días (soy un desastre)" >}}
@@ -82,7 +82,7 @@ Tal y como pedí ya viene con Linux Mint 20 Ulyana de fábrica y con todos los d
 {{< figure src="/images/posts/battery_search.png" title="Slimbook Battery" >}}
 
 [Slimbook Battery](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/398-slimbook-battery-3-application-for-optimize-battery-of-your-laptop): Para gestionar la batería de forma muy eficiente. De momento lo he probado poco, a ver si se nota cuando me esté quedando tieso algún día...
- 
+
 {{< figure src="/images/posts/app_face.png" title="Slimbook Face" >}}
 
 [Slimbook Face](https://slimbook.es/en/tutoriales/aplicaciones-slimbook/400-slimbook-face-biometric-recognition-and-dont-enter-more-passwords): Reconocimiento facial para no pasarte la vida autenticando cada vez que inicias sesión, haces un sudo o instalas updates. Ojo aquí porque al principio le costaba reconocer mi cara, pero volví a crear el modelo con más luz y ya está. De hecho creé dos o tres porsiaca aunque no sé si sirve para algo xD
@@ -100,15 +100,14 @@ Hay [otra aplicación de SLIMBOOK](https://slimbook.es/en/tutoriales/aplicacione
 Esta aplicación permite configurar los gestures de 3 y 4 dedos, pero buscando un poco hay varias alternativas.
 Finalmente me decidí por usar libinput-gestures tal y como leí en un [reddit](https://www.reddit.com/r/linuxmint/comments/9l9zx1/touchpad_gestures_on_linux_mint_19/):
 
-
 {{< admonition title="Gestures" >}}
-First install [libinput-gestures](https://github.com/bulletmark/libinput-gestures). Go with Debian/Ubuntu path. 
+First install [libinput-gestures](https://github.com/bulletmark/libinput-gestures). Go with Debian/Ubuntu path.
 Then you can configure it with this [GUI tool](https://gitlab.com/cunidev/gestures).
 {{< /admonition >}}
 
 Ya veréis que no tiene ningún secreto y funciona perfectamente.
 
-## Funcionamiento 
+## Funcionamiento
 
 Llevo sólo un par de días así que no tengo mucho que contar salvo que de momento 0 sorpresas. Todo va como la seda y de hecho siento que es mucho más potente que mi workstation haciendo las mismas cosas. Lo pongo por comparar porque en éste también tengo MINT instalado.
 
@@ -147,11 +146,12 @@ Básicamente lo uso en casa para teletrabajo conectado al dock pero he tenido qu
 
 {{< figure src="/images/posts/DeskSetup.jpg" title="Montaje final" >}}
 
-En el montaje final he remplazado mis dos monitores viejos de 24" por uno de 34" ultrawide y la verdad es que tengo área de sobras. Además, al trabajar con varios escritorios virtuales "temáticos" (code, back, office, social) me he acostumbrado a moverme ente ellos con el teclado CTRL+ALT+ARROW KEYS y es una gozada. 
+En el montaje final he remplazado mis dos monitores viejos de 24" por uno de 34" ultrawide y la verdad es que tengo área de sobras. Además, al trabajar con varios escritorios virtuales "temáticos" (code, back, office, social) me he acostumbrado a moverme ente ellos con el teclado CTRL+ALT+ARROW KEYS y es una gozada.
 
 De hecho ahora me doy cuenta de lo poco que usaba mi segundo monitor. Me refiero a que si, lo usaba, pero mi atención estaba casi centrada en el principal y mi vista se desplazaba mucho menos al segundo. De hecho, antes pensaba en añadir un segundo monitor (uno de mis antiguos de 24") vertical para leer código pero me parece que al final no lo voy a hacer. De momento me sobra con lo que tengo, tal vez más adelante.
 
-El el dock tengo conectado un monitor de 34", un teclado mecánico cherry red, un mouse logitech, el cable ethernet y lógicamente un cable USB-C al portátil. Porque una de las ventajas de este nuevo dock de SLIMBOOK es que con un sólo cable del portátil al dock saca video y carga al mismo tiempo. 
+El el dock tengo conectado un monitor de 34", un teclado mecánico cherry red, un mouse logitech, el cable ethernet y lógicamente un cable USB-C al portátil. Porque una de las ventajas de este nuevo dock de SLIMBOOK es que con un sólo cable del portátil al dock saca video y carga al mismo tiempo.
+
 Sólo es necesario instalar en el portátil el [driver DisplayLink para Ubuntu y derivados](https://www.displaylink.com/downloads).
 
 {{< figure src="/images/posts/Dock.jpg" title="Dock station" >}}
@@ -210,7 +210,7 @@ La pantalla de la derecha es sólo de 24" pero al colocarla vertical parece much
 
 En conjunto mola mucho. Lo del soporte tenía que haberlo hecho antes porque ahora tengo los monitores a la altura corecta y se pueden mover sin problemas y con suavidad. Es una gozada. Y además me queda todo el espacio de abajo para poder los típicos cacharros de escritorio para los bolis, lápices y demás cosas.
 
-### Info sobre los componentes
+### Info sobre los componentes 2
 
 [El soporte](https://www.amazon.es/gp/product/B0861284GB/ref=ppx_yo_dt_b_asin_title_o03_s00?ie=UTF8&psc=1)
 

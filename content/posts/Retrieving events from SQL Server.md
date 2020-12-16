@@ -49,16 +49,16 @@ AS
 BEGIN
 RAISERROR('1) Starting', 0, 0) WITH NOWAIT;
 WAITFOR DELAY '00:00:03'; --Wait for 3 seconds
- 
+
 RAISERROR('2) Fetching data', 0, 0) WITH NOWAIT;
 WAITFOR DELAY '00:00:05'; --Wait for 5 seconds
- 
+
 RAISERROR('3) Some other actions', 0, 0) WITH NOWAIT;
 WAITFOR DELAY '00:00:03'; --Wait for 3 seconds
- 
+
 RAISERROR('4) Calculating', 0, 0) WITH NOWAIT;
 WAITFOR DELAY '00:00:02'; --Wait for 2 seconds
- 
+
 RAISERROR('5) Finishing', 0, 0) WITH NOWAIT;
 END
 {{< / highlight >}}
@@ -66,6 +66,7 @@ END
 Thanks to RAISEERROR when executing this stored procedure we will show this output.
 
 {{< highlight systemd "linenos=table" >}}
+
 1) Starting
 2) Fetching data
 3) Some other actions
@@ -82,7 +83,7 @@ Now let’s create some C# code:
 First: A class to send the received messages from our repository to its consumer, which in this case the UI will be just a Windows Form (good old boys never die).
 
 {{< highlight csharp "linenos=table" >}}
-public class SqlMessageEventArgs 
+public class SqlMessageEventArgs
 {
     public string Message { get; set; }
     public int Progress { get; set; }
@@ -161,16 +162,16 @@ AS
 BEGIN
 RAISERROR('1) Starting', 0, 10) WITH NOWAIT;
 WAITFOR DELAY '00:00:03'; --Wait for 3 seconds
- 
+
 RAISERROR('2) Fetching data', 0, 30) WITH NOWAIT;
 WAITFOR DELAY '00:00:05'; --Wait for 5 seconds
- 
+
 RAISERROR('3) Some other actions', 0, 60) WITH NOWAIT;
 WAITFOR DELAY '00:00:03'; --Wait for 3 seconds
- 
+
 RAISERROR('4) Calculating', 0, 70) WITH NOWAIT;
 WAITFOR DELAY '00:00:02'; --Wait for 2 seconds
- 
+
 RAISERROR('5) Finishing', 0, 100) WITH NOWAIT;
 END
 {{< / highlight >}}

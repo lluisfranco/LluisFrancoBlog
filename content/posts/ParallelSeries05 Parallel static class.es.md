@@ -51,7 +51,7 @@ for (int i = 0; i < 100; i++)
     else
         Console.WriteLine(string.Format("{0} no es primo", i));
 }
- 
+
 Parallel.For(0, 100, (i) =>
     {
         if (i.IsPrime())
@@ -63,7 +63,7 @@ Parallel.For(0, 100, (i) =>
 
 En ambos  casos tenemos una serie de líneas que deben ejecutarse 100 veces. Concretamente desde 0 hasta 99, ya que el elemento superior no se incluye en ninguno de los dos casos. Sólo se ve un poco extraño el uso del Action<T>, pero podéis pensar en que la variable int i del primer bucle for, aquí se transforma en la parte (i) a la izquierda de la expresión lambda (=>). Y las acciones a ejecutar del primer for son exactamente iguales y van a la derecha de la expresión lambda.
 
-### So, let’s parallelize!
+### So, let’s parallelize
 
 Viéndolo de este modo debe resultar extremadamente sencillo transformar todos nuestros bucles de este modo, así que ¿debemos hacerlo? La respuesta es NO.
 
@@ -156,7 +156,7 @@ private void button11_Click(object sender, EventArgs e)
     clock.Stop();
     this.Text = clock.ElapsedMilliseconds.ToString("n2");
 }
- 
+
 void dowork_cancel(int i, CancellationTokenSource cs)
 {
     Thread.Sleep(1000);

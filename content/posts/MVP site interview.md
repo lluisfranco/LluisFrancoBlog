@@ -16,7 +16,7 @@ tags:
 ## My 5 minutes of glory :joy:
 
 Yesterday the guys of MS published my brief interview [MVP site](http://mvp.microsoft.com/en-US/Pages/default.aspx).
-However, it is not the full version, that I copy here. 
+However, it is not the full version, that I copy here.
 
 ### About Lluís Franco
 

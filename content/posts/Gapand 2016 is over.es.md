@@ -20,7 +20,7 @@ tags:
 
 Bueno,
 
-Otro año ha pasado, y otra edición más del GAPAND a la saca. 
+Otro año ha pasado, y otra edición más del GAPAND a la saca.
 No, si al final esto va a convertirse en un clásico y todo... bueno, eso el tiempo lo dirá. Lo que si os puedo asegurar es que ha sido la mejor edición hasta la fecha, ya que el feedback de la gente (que al fin y al cabo es la única métrica que me interesa) es, a falta de una palabra más ‘fisna’: COJONUDO :D
 
 Y eso no se paga con nada, sabéis? Porque vale, si, seguro que ya os imagináis que organizar un evento como este es un currazo. Y vaya si lo es! Lleva meses de trabajo duro, de coordinarse con mucha gente, de lidiar con 1000 temas distintos, de solucionar un montón de problemillas sobre la marcha, y todo por un día… un mísero día al año. Como nos gusta complicarnos la vida, eh? ;)
@@ -31,7 +31,7 @@ Pero es que todo eso no es nada cuando ves el ambientazo que se respira ese día
 
 {{< figure src="/images/posts/GapAnd2016Sessions1.png" title="Tracks del GAPAND 2016" >}}
 
-### Muchas gracias a todos!
+### Muchas gracias a todos :)
 
 Así que desde aquí quiero daros las gracias a todos los que en mayor o menos medida habéis ayudado a que este evento hay sido posible: GRACIAS! GRACIAS! Y MUCHAS GRACIAS! :D
 

@@ -22,7 +22,7 @@ tags:
 
 La programación paralela no es nada nuevo. Ya estaba presente allá en mis tiempos de estudiante hace más de 20 años :cry: y hoy en día, desde la aparición del .Net Framework 4.0 está más viva que nunca gracias a la [Task Parallel Library](http://msdn.microsoft.com/en-us/library/bb308959.aspx) o TPL.
 
-No obstante, decir que la TPL sólo sirve para realizar tareas asíncronas es como decir que un smartphone sólo sirve para llamar por teléfono. Es más, muchísimo más. Y es precisamente, de la mano de ésta librería que vamos a introducirnos en el apasionante mundo de la programación paralela. Esta disciplina siempre ha estado tradicionalmente asociada a los perfiles técnicos más elevados y reservada para ocasiones especiales. 
+No obstante, decir que la TPL sólo sirve para realizar tareas asíncronas es como decir que un smartphone sólo sirve para llamar por teléfono. Es más, muchísimo más. Y es precisamente, de la mano de ésta librería que vamos a introducirnos en el apasionante mundo de la programación paralela. Esta disciplina siempre ha estado tradicionalmente asociada a los perfiles técnicos más elevados y reservada para ocasiones especiales.
 
 Sin embargo a partir de ahora y gracias a la TPL va a ser accesible a todo tipo de desarrolladores, y se va a convertir en algo muy importante, algo que todo buen desarrollador deberá añadir a su lista de activos. De hecho, va a ser una parte esencial en el futuro inmediato del desarrollo de aplicaciones a todos los niveles.
 
@@ -36,7 +36,7 @@ Supongamos que tenemos que copiar los 200 tomos de la gran enciclopedia galácti
 
 Pero ¿qué sucede si sólo tenemos 100 escritorios y bolígrafos? Pues que los monos van a tener que hacer cola y esperar su turno, de modo que cuando uno de los monos termine o se canse de escribir, deberá ceder su turno al mono que espera, provocando por el camino algunas colas y enfados por parte de los monos, que son buenos trabajadores pero un poco particulares.
 
-Con todo, a menos que estalle una guerra siempre será más rápido que la primera opción, pero eso nos deja ya la primera conclusión: a más recursos (escritorios y bolígrafos) más rápido terminaremos la tarea. Y de paso vamos a tener que preocuparnos menos por gestionar los turnos y las esperas de los monos, con todo lo que conlleva. 
+Con todo, a menos que estalle una guerra siempre será más rápido que la primera opción, pero eso nos deja ya la primera conclusión: a más recursos (escritorios y bolígrafos) más rápido terminaremos la tarea. Y de paso vamos a tener que preocuparnos menos por gestionar los turnos y las esperas de los monos, con todo lo que conlleva.
 
 Porque como veremos más adelante, en muchas ocasiones cuando trabajamos con monos o con threads **el tiempo de sincronización es primordial**, y puede marcar la diferencia entre el éxito y el fracaso de nuestra aplicación.
 
@@ -64,9 +64,9 @@ Con esto no quiero decir que no puedan fabricarse ordenadores más rápidos en u
 
 ## Deus ex machina
 
-Si por algo se ha caracterizado el ser humano es por su gran habilidad en resolver problemas (dejando aparte su nada desdeñable habilidad para provocarlos), de modo que ya hace unos años que se ha empezado a desarrollar y fabricar una de las soluciones a este problema. 
+Si por algo se ha caracterizado el ser humano es por su gran habilidad en resolver problemas (dejando aparte su nada desdeñable habilidad para provocarlos), de modo que ya hace unos años que se ha empezado a desarrollar y fabricar una de las soluciones a este problema.
 
-De hecho hoy en día se ha convertido en algo casi cotidiano: Se trata de fabricar procesadores con varios núcleos, que se repartan el trabajo -como los monos- consiguiendo así aumentar la velocidad. No por el hecho de ser cada vez más rápidos, si no por existir cada vez más recursos trabajando al mismo tiempo. 
+De hecho hoy en día se ha convertido en algo casi cotidiano: Se trata de fabricar procesadores con varios núcleos, que se repartan el trabajo -como los monos- consiguiendo así aumentar la velocidad. No por el hecho de ser cada vez más rápidos, si no por existir cada vez más recursos trabajando al mismo tiempo.
 
 Algo parecido -salvando las distancias- al cerebro humano, que en comparación con un ordenador es bastante más lento, pero su capacidad de procesamiento en paralelo gracias a sus millones de conexiones entre neuronas, no tiene rival con ningún otro elemento conocido en la naturaleza ni creado por el hombre.
 

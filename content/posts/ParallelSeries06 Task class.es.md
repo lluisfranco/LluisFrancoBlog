@@ -24,7 +24,7 @@ En los posts previos hemos hablado de [PLINQ](/es/parallelseries04-plinq) y de l
 
 Durante muchos años los desarrolladores hemos tenido que lidiar -más ben pelearnos- con la multitarea y la ejecución de código asíncrono. Ya dese las primeras versiones de C# podíamos crear hilos a mano mediante la clase Thread, pero el proceso distaba mucho de ser sencillo y además adolecía de cierta complejidad para manejar cancelaciones o actualizar la interfaz de usuario. Y aunque han habido intentos de mejora como la interfaz [IAsyncResult](http://msdn.microsoft.com/en-us/library/system.iasyncresult.aspx) también han aparecido engendros infumables como el maldito [BackgroundWorker](http://msdn.microsoft.com/en-us/library/system.componentmodel.backgroundworker.aspx) el cual es tan malo como hacerse cirugía cerebral con manoplas uno mismo.
 
-### Task al rescate!
+### Task al rescate
 
 Así que cuando apareció la TPL y la clase Task los desarrolladores encontramos por fin un método simple y cómodo para ejecutar código asíncrono y además en paralelo. Y esto es realmente muy importante ya que hoy en día en muchas aplicaciones (al menos las que están bien diseñadas) se ejecutan tareas en paralelo para acceder a recursos externos o ‘costosos’, bases de datos, y sobre todo para actualizaciones de la interfaz de usuario. De hecho es tan importante que será una de las mejoras más importantes en la siguiente versión de [C# 5.0](http://blogs.msdn.com/b/mvpawardprogram/archive/2012/03/26/introduction-of-new-features-in-c-5-0.aspx) de la cual hablaremos al final de la serie.
 
@@ -238,7 +238,7 @@ var t = Task.Factory.StartNew(
     );
 Thread.Sleep(500);
 cs.Cancel();
- 
+
 t.ContinueWith(task =>
     {
         switch (task.Status)

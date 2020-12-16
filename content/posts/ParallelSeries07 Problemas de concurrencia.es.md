@@ -42,7 +42,7 @@ public class Customer
     public int CustomerId { get; set; }
     public string Name { get; set; }
     public int Age { get; set; }
- 
+
     public static List<Customer> GetSampleCustomers(int n)
     {
         Random r = new Random(Guid.NewGuid().GetHashCode());
@@ -82,12 +82,12 @@ private void DeleteItem1(int id)
 {
     if (dic1.ContainsKey(id) && dic1[id].Age < 30) dic1.Remove(id);
 }
- 
+
 private void UpdateItem1(int id)
 {
     if (dic1.ContainsKey(id)) dic1[id].Age++;
 }
- 
+
 private void button1_Click(object sender, EventArgs e)
 {
     for (int i = 0; i < 100; i++)
@@ -100,7 +100,7 @@ private void button1_Click(object sender, EventArgs e)
 }
 {{< / highlight >}}
 
-#### Paso 5 - A jugar!
+#### Paso 5 - A jugar :)
 
 Ejecutamos nuestra aplicación y si se produce una colisión puede pasar que obtengamos un bonito error como este, en el que básicamente se intenta acceder a un elemento de la colección que ya no existe (Si no se produce a la primera, repite la prueba hasta que lo veas).
 
@@ -147,7 +147,7 @@ private void DeleteItem2(int id)
     Customer c;
     if(!dic2.TryRemove(id, out c)) Console.WriteLine("Error deleting!");
 }
- 
+
 private void UpdateItem2(int id)
 {
     Customer c;
@@ -157,7 +157,7 @@ private void UpdateItem2(int id)
     }
     else
     {
-        Customer newc = new Customer() { 
+        Customer newc = new Customer() {
             CustomerId = c.CustomerId, Name = c.Name, Age = c.Age };
         newc.Age++;
         if (!dic2.TryUpdate(id, newc, c)) Console.WriteLine("Error updating!");
@@ -171,7 +171,7 @@ La actualización es un poco más compleja, ya que primero debemos asegurarnos d
 
 Es interesante notar que para que la modificación se realice correctamente debemos informar de la clave del objeto en la colección, el nuevo valor del objeto (en este caso la réplica del cliente a la que hemos modificado la edad) y un tercer parámetro que es el valor original del objeto, que es usado para comparar.
 
-#### Paso 4 - A jugar de nuevo!
+#### Paso 4 - A jugar de nuevo :D
 
 Ejecutamos y si vamos a la ventana de consola podremos observar el resultado:
 
@@ -194,9 +194,8 @@ La ventaja de usar colecciones específicas en entornos multithreading es clara:
 
 Por otro lado, el uso de estas colecciones debe hacerse sólo en aquelos casos en los que se accede a recursos compartidos, ya que si no, por un lado estamos complicando nuestro codigo y por otro lado un ConcurrentDictionary no es tan eficiente como lo és un Dictionary, sobre todo en entornos más de escritura que de lectura. Tenéis un post muy detallado al respecto del gran James (aka Black Rabbit) respecto a la diferencia de performance:
 
-http://geekswithblogs.net/BlackRabbitCoder/archive/2010/06/09/c-4-the-curious-concurrentdictionary.aspx
+<http://geekswithblogs.net/BlackRabbitCoder/archive/2010/06/09/c-4-the-curious-concurrentdictionary.aspx>
 
 Espero sacar tiempo para otro post en el que explicar otras colecciones de este namespace, como las ‘BlockingCollection’ o las ‘’ConcurrentBag’, que son colecciones más especializadas. La primera está optimizada para escenarios dónde el mismo thread produce y consume objetos, mientras que la segunda ha sido especialmente diseñada para escenarios de productor-consumidor.
-
 
 [Ir al índice de la serie](/es/parallelseries00-index)

@@ -146,7 +146,7 @@ String s3 = concatenar(s1, s2)
 
 En un lenguaje funcional el compilador puede analizar el código, clasificar las funciones que crean las cadenas s1 y s2 como potenciales consumidoras de tiempo, y ejecutarlas concurrentemente. Esto es imposible de hacer en un lenguaje imperativo porque cada función puede modificar el estado externo y la siguiente función a ejecutarse quizá dependa de ello. En los lenguajes funcionales el análisis automático de funciones para encontrar buenos candidatos para ejecución concurrente es tan trivial como reducir funciones a funciones inline en C++. ¡Así de fácil! En este sentido, los programas en estilo funcional son “a prueba del futuro” (por mucho que odie las expresiones de moda, esta vez hare una excepción). Los creadores de hardware ya no pueden hacer que las CPUs sean más rápidas. En su lugar, incrementan el número de núcleos y atribuyen el cuádruple de aumento de velocidad a a la concurrencia. Por supuesto, convenientemente olvidan mencionar que solo obtendremos beneficios de eso si el software que usamos esta listo para ser paralelizable. Esto apenas es cierto en una pequeña fracción del software imperativo, pero es verdad en el 100% del software funcional, porque los programas funcionales son paralelizables recién salidos de la caja.
 
-#### Actualizaciones en caliente 
+#### Actualizaciones en caliente
 
 Hace tiempo, para instalar actualizaciones de Windows era necesario reiniciar la computadora. Varias veces. Y eso solo para instalar una nueva versión del reproductor multimedia. Con Windows XP la situación ha mejorado bastante, pero aun esta lejos de ser ideal (hoy corrí Windows Update en el trabajo y ahora un molesto icono en la bandeja del sistema no desaparecerá hasta que reinicie). Los sistemas Unix han tenido un mejor modelo desde hace tiempo. Para instalar una actualización, solo necesitas detener los componentes relevantes, no el sistema operativo entero. Aunque esto es mejor, para cierto tipo de aplicaciones de servidor aun es inaceptable. Los sistemas de telecomunicaciones necesitan estar al 100% todo el tiempo, pues si por una actualización del sistema no se puede realizar una llamada de emergencia algunas vidas podrías perderse. No hay razón para que las firmas de Wall Street deban detener sus sistemas para actualizaciones durante el fin de semana.
 
@@ -241,11 +241,10 @@ abstract class ControladorMensajes
         // ...
         enviarMensaje(msg);
     }
- 
     abstract String obtenerCodigoCliente();
     // ..
 }
- 
+
 class ControladorMensajes1 extends ControladorMensajes
 {
     String obtenerCodigoCliente()
@@ -253,7 +252,7 @@ class ControladorMensajes1 extends ControladorMensajes
         return "ABCD_123";
     }
 }
- 
+
 class ControladorMensajes2 extends ControladorMensajes
 {
     String obtenerCodigoCliente()
@@ -277,17 +276,17 @@ class ControladorMensajes
     }
     // ...
 }
- 
+
 String codigoCliente1()
 {
     return "ABCD_123";
 }
- 
+
 String codigoCliente2()
 {
     return "123_ABCD";
 }
- 
+
 ControladorMensajes controlador = new ControladorMensajes();
 controlador.controlarMensaje(unMsj, codigoCliente1);
 {{< / highlight >}}
@@ -322,7 +321,7 @@ class t_funcion_cuadrado
         return potencia(i, 2);
     }
 }
- 
+
 t_funcion_cuadrado cuadrado = new t_funcion_cuadrado();
 {{< / highlight >}}
 
@@ -490,7 +489,7 @@ Function crearFuncionPotencia(int potencia)
     }
     return funcionPotencia;
 }
- 
+
 Funcion cuadrado = hacerFuncionPotencia(2);
 cuadrado(3) ; //Devuelve 9
 {{< / highlight >}}
