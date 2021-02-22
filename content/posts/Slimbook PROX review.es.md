@@ -217,3 +217,31 @@ En conjunto mola mucho. Lo del soporte tenía que haberlo hecho antes porque aho
 [Para los cables](https://www.amazon.es/gp/product/B086KWLDDZ/ref=ppx_yo_dt_b_asin_title_o02_s00?ie=UTF8&psc=1)
 
 (seguiremos informando) :smile:
+
+## Update (22/02/2021)
+
+A medida que va pasando el tiempo me doy cuenta de que el 99% del tiempo uso el portátil como si fuera un desktop. Tal vez podría haber comprado el de 15" en lugar del de 14" ya que tiene algo más de poténcia de fuego :S
+
+Aunque la verdad es que pensándolo bien el de 14 no me lo acabo, así que bueno... tampoco importa.
+
+Hace un par de días mi colega [Juanjo](https://twitter.com/kastwey) que es especialista en accesibilidad me preguntó acerca del teclado. Os pego aquí una foto del teclado y la descripción que le mandé, por si a alguien más le puede ser de utilidad:
+
+{{< figure src="/images/posts/SlimbookTeclado.png" title="Teclado PROX" >}}
+
+Un par de particularidades: No tiene tecla WIN (es el pingu Tux de LINUX) y en la fila inferior las teclas de dirección ariba y abajo ocupan una sola tecla porque son más peques. Como es habitual la tecla RETURN es más grande y ocupa la parte derecha de dos filas (la 3 y 4). Yo lo tengo en idioma Español, tiene 6 filas y no tiene teclado numérico.
+
+Las enumero de arriba a abajo:
+
+Fila 1 - ESC, F1, F2, F3, F4, F5, F6, F7, F8, F9, F10, F11, F12, INPR PANT, INS, SUPR
+
+Fila 2 - ºª, 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, APOSTROFE, EXCLAMACION, BACKSPACE
+
+Fila 3 - TAB, Q, W, E, R, T, Y, U, I, O, P, ACENTO CORCHETE, + CORCHETE CIERRE, (RETURN 2 FILAS 1 PARTE)
+
+Fila 4 - CAPS LOCK, A, S, D, F, G, H, J, K, L, Ñ, ACENTO LLAVE, Ç LLAVE CIERRE, (RETURN 2 FILAS 2 PARTE)
+
+Fila 5 - MAY LEFT, MAYOR MENOR, Z, X, C, V, B, N, M, COMA, PUNTO, GUION, MAY RIGHT
+
+Fila 6 - CTRL LEFT, FN, TUX LINUX (NO WIN), ALT, SPACE, ALT GR, CTRL RIGHT, DIR LEFT, DIR UP Y DIR DOWN (MINIS EN UNA SOLA TECLA), DIR RIGHT
+
+Un saludo,
