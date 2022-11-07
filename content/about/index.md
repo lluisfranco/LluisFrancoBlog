@@ -62,15 +62,4 @@ Languages and technologies I've learnt through the years.
 | CSS                 |  2018 |    - |     :star::star: |
 | Python              |  2019 |    - |     :star::star: |
 | Go                  |  2020 |    - |     :star: |
-
-## Who am I?
-
-{{< figure src="/images/about/about.png" title="Speaking at dotnet conference" >}}
-
-{{< instagram BsG0h83FiNm hidecaption >}}
-{{< instagram BlOM4qKja7H hidecaption >}}
-{{< instagram BmrIhGLDYi1 hidecaption >}}
-{{< instagram BfGahp5hcRy hidecaption >}}
-{{< instagram B0727jSHQJ8 hidecaption >}}
-{{< instagram B072VWWnHwA hidecaption >}}
-{{< instagram Bugg8xFlEkO hidecaption >}}
+| Rust                  |  2021 |    - |     :star::star: |

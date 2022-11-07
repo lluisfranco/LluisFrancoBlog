@@ -8,7 +8,7 @@ disqusShortname = "lluisfrancoblog"
 
 DefaultContentLanguage = "en"
 
-ignoreErrors = ["error-remote-getjson"]
+ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
 [languages]
   [languages.en]
