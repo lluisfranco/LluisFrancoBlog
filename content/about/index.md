@@ -53,7 +53,6 @@ Languages and technologies I've learnt through the years.
 | Clipper             |  1998 | 1999 |     :star::star::star: |
 | Delphi              |  1998 | 2002 |     :star::star::star::star: |
 | Java                |  1998 | 2004 |     :star::star::star::star: |
-| ActionScript        |  1999 | 1999 |     :star: |
 | Visual Basic.NET    |  2002 | 2010 |     :star::star::star::star: |
 | C#                  |  2002 |    - |     :star::star::star::star::star: |
 | Javascript          |  2008 |    - |     :star::star::star: |
@@ -62,4 +61,4 @@ Languages and technologies I've learnt through the years.
 | CSS                 |  2018 |    - |     :star::star: |
 | Python              |  2019 |    - |     :star::star: |
 | Go                  |  2020 |    - |     :star: |
-| Rust                  |  2021 |    - |     :star::star: |
+| Rust                |  2021 |    - |     :star::star: |
