@@ -53,3 +53,5 @@ Use this command replacing MYPASSWORD for your own password.
 {{< highlight bash "linenos=table" >}}
 python -c "import gnomekeyring;gnomekeyring.change_password_sync('login', 'MYPASSWORD', '');"
 {{< / highlight >}}
+
+Hope this help you :)
